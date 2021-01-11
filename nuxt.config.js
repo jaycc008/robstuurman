@@ -64,10 +64,11 @@ export default {
 		customVariables: ['~/assets/variables.sass'],
 		theme: {
 			themes: {
-				dark: {
-					primary: colors.blue.darken2,
-					accent: colors.grey.darken3,
-					secondary: colors.amber.darken3,
+				light: {
+					primary: '#1E1E1E',
+					accent: '#F07C6D',
+					secondary: '#7784C8', // purple
+					tertiary: '#47537F', // blue
 					info: colors.teal.lighten1,
 					warning: colors.amber.base,
 					error: colors.deepOrange.accent4,

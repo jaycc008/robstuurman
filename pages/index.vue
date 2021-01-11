@@ -1,5 +1,8 @@
 <template lang="pug">
 v-container
+	background-blob
+	v-row
+		v-col(cols="")
 
 
 //- <v-row justify="center" align="center">

@@ -1,10 +1,16 @@
 <template lang="pug">
-v-app
+v-app(theme="light")
 	v-main
-		nav
-			.logo 
+		main-nav
 		v-container
 			nuxt
 	v-footer(app)
 		span &copy; {{ new Date().getFullYear() }}
 </template>
+
+<script>
+import MainNav from '@/components/main-nav'
+export default {
+	components: { MainNav },
+}
+</script>
