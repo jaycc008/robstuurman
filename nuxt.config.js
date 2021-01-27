@@ -54,6 +54,7 @@ export default {
 		'@nuxtjs/eslint-module',
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
+		'@nuxtjs/svg',
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
@@ -62,11 +63,13 @@ export default {
 	// Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
 	vuetify: {
 		customVariables: ['~/assets/variables.sass'],
+		treeShake: true,
 		theme: {
+			options: { customProperties: true },
 			themes: {
 				light: {
-					primary: '#1E1E1E',
-					accent: '#F07C6D',
+					primary: '#1E1E1E', // black
+					accent: '#F07C6D', // orange
 					secondary: '#7784C8', // purple
 					tertiary: '#47537F', // blue
 					info: colors.teal.lighten1,
@@ -80,7 +83,7 @@ export default {
 
 	// Build Configuration (https://go.nuxtjs.dev/config-build)
 	build: {
-		extend(config, { isDev, isClient }) {
+		extend(config, { isDev, _isClient }) {
 			// ..
 			config.module.rules.push({ test: /\.pug$/, loader: 'pug-plain-loader' })
 			// Sets webpack's mode to development if `isDev` is true.

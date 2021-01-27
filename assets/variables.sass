@@ -11,10 +11,6 @@
 	list-style: none
 	text-decoration: none
 	box-sizing: border-box
-	font-smooth: always
-
-.default-shadow
-	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.04)
 
 $body-font-family: Poppins
 $heading-font-family: Rufina
@@ -22,17 +18,21 @@ $heading-font-family: Rufina
 $font-size-root: 18px
 $line-height-root: 32px
 $grid-gutter: 40px
+$btn-letter-spacing: 0
+
+.default-shadow
+	box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.04)
 
 .v-application
 	font-family: $body-font-family, sans-serif !important
-	color: var(--v-primary-base)
+	color: var(--v-primary-base) !important
 
 h1, .h1
 	font-family: $body-font-family, sans-serif !important
 	font-size: $font-size-root
 	font-weight: bold 
 	line-height: 52px
-	color: var(--v-secondary-base)
+	color: var(--v-secondary-base) !important
 
 h2, .h2
 	font-family: $heading-font-family
@@ -55,11 +55,24 @@ p
 	font-family: $body-font-family, sans-serif !important
 	font-size: $font-size-root
 	line-height: $line-height-root
-	.focus
+	.focus, &.focus
 		font-weight: bold
 		color: var(--v-accent-base)
-	.small
+	.small, &.small
 		font-size: 16px
 		line-height: 28px
 
+.gradient:hover
+	color: #ffffff !important
+	border-color: transparent
+	&::before
+		opacity: 1 !important
+		background-color: transparent !important
+		background: linear-gradient(93.99deg, #4B5899 0.95%, #432F74 100%) !important
+		top: -1px
+		right: -1px
+		bottom: -1px
+		left: -1px
+
 @import '~vuetify/src/styles/styles.sass'
+
