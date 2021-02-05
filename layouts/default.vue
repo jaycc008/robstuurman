@@ -2,7 +2,7 @@
 v-app(light)
 	v-main
 		main-nav
-		nuxt(style="margin-top: 232px")
+		nuxt.content
 </template>
 
 <script>
@@ -17,4 +17,11 @@ export default {
 .v-main
 	background-image: url('~assets/ellipse.svg')
 	background-position: right -256px top -307px
+
+	.content
+		margin-top: 232px
+
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		.content
+			margin-top: 128px
 </style>
