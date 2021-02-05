@@ -58,7 +58,7 @@ export default {
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules: [],
+	modules: ['portal-vue/nuxt'],
 
 	// Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
 	vuetify: {
@@ -72,6 +72,7 @@ export default {
 					accent: '#F07C6D', // orange
 					secondary: '#7784C8', // purple
 					tertiary: '#47537F', // blue
+					skin: '#FFECE5', // zalmroze
 					info: colors.teal.lighten1,
 					warning: colors.amber.base,
 					error: colors.deepOrange.accent4,

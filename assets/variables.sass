@@ -12,6 +12,9 @@
 	text-decoration: none
 	box-sizing: border-box
 
+.v-application ul, .v-application ol
+	padding-left: 0
+
 $body-font-family: Poppins
 $heading-font-family: Rufina
 
@@ -51,7 +54,7 @@ h2, .h2
 	font-size: $line-height-root
 	line-height: 44px
 
-p
+p, span
 	font-family: $body-font-family, sans-serif !important
 	font-size: $font-size-root
 	line-height: $line-height-root
@@ -61,6 +64,9 @@ p
 	.small, &.small
 		font-size: 16px
 		line-height: 28px
+.small
+	font-size: 16px
+	line-height: 28px
 
 .gradient:hover
 	color: #ffffff !important
@@ -74,5 +80,27 @@ p
 		bottom: -1px
 		left: -1px
 
+.c-pointer
+	cursor: pointer
+
 @import '~vuetify/src/styles/styles.sass'
 
+@media #{map-get($display-breakpoints, 'sm-and-down')}
+	p, span
+		font-family: $body-font-family, sans-serif !important
+		font-size: 16px
+		line-height: 30px
+		.small, &.small
+			font-size: 13px
+			line-height: 22px
+	.small
+		font-size: 13px
+		line-height: 22px
+
+	.title1
+		font-size: 24px
+		line-height: 36px
+
+	// .title2
+	// 	font-size: $line-height-root
+	// 	line-height: 44px
