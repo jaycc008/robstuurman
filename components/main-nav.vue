@@ -30,7 +30,7 @@ nav
 	flex-direction: row
 	border-radius: 8px
 	justify-content: space-between
-	z-index: 10
+	z-index: 20
 	background-color: #FFF
 
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
