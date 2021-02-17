@@ -1,5 +1,5 @@
 <template lang="pug">
-nav.default-shadow.mx-6.mx-lg-10.pr-md-4.mt-6.mt-lg-10
+nav.big-shadow.mx-6.mx-lg-10.pr-md-4.mt-6.mt-lg-10
 	v-img.logo.ml-4.my-4.ml-md-8(src="logo.svg" max-height="64" max-width="223" contain)
 	ul.menu.d-none.d-md-flex
 		li.menu-item(v-for="item in menuItems" :key="item")
