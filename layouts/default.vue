@@ -32,7 +32,7 @@ v-app(light)
 						v-list-item(v-for="(credit, index) in credits" :key="index")
 							v-list-item-title.small
 								| {{credit.text}}
-								a.secondary--text.text-decoration-underline(v-bind:href="credit.href" _target="_blank")  {{credit.linktext}}
+								a.secondary--text.text-decoration-underline(:href="credit.href" target="_blank")  {{credit.linktext}}
 				.mr-6.small 2020 © Rob Stuurman
 </template>
 
@@ -47,17 +47,17 @@ export default {
 				{
 					text: 'Ontworpen door',
 					linktext: 'Moor Design',
-					href: 'www.souliamoor.nl',
+					href: 'http://souliamoor.nl/',
 				},
 				{
 					text: 'Ontwikkeld door',
 					linktext: 'Jayce Ardon',
-					href: 'www.ja-development.nl',
+					href: 'http://ja-development.nl/',
 				},
 				{
 					text: 'Illustraties door',
 					linktext: 'Freepik',
-					href: 'www.freepik.com',
+					href: 'https://www.freepik.com/',
 				},
 			],
 		}
