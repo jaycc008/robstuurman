@@ -20,10 +20,10 @@ v-container
 			.about-me
 				h1 Over Rob Stuurman
 				.title2.mb-6 Ik stel me graag even voor
-				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In [jaartal] zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in [jaartal] bij het
+				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-		v-col.offset-1.offset-md-1(cols="10" md="4" order-md="1")
+		v-col.offset-1.offset-md-1.offset-sm-3(cols="10" sm="6" md="4" order-md="1")
 			.about-picture
 				v-img.image-shadow(:src="require('~/assets/rob.png')")
 	v-row.float-left
@@ -53,21 +53,21 @@ v-container
 	v-row.mb-16.float-left
 		v-col(lg="3" sm="6")
 			.custom-card.big-shadow.d-flex.flex-sm-column.pa-8.rounded-lg
-				v-img.image-holder(:src="require('~/assets/step-1.svg')" max-height="251" contain)
+				v-img.image-holder(:src="require('~/assets/step-1.svg')" :height="$vuetify.breakpoint.mdAndUp ? 251 : undefined" contain)
 				.step-text.ml-6.ml-sm-0.mt-sm-6
 					p.text-sm-center
 						| Eerst maken we telefonisch een
 						span.focus  afspraak
 		v-col(lg="3" sm="6")
 			.custom-card.big-shadow.d-flex.flex-sm-column.pa-8.rounded-lg
-				v-img.image-holder(:src="require('~/assets/step-2.svg')" max-height="251" contain)
+				v-img.image-holder(:src="require('~/assets/step-2.svg')" :height="$vuetify.breakpoint.mdAndUp ? 251 : undefined" contain)
 				.step-text.ml-6.ml-sm-0.mt-sm-6
 					p.text-sm-center
 						| Dan volgt er een
 						span.focus  intakegesprek
 		v-col(lg="3" sm="6")
 			.custom-card.big-shadow.d-flex.flex-sm-column.pa-8.rounded-lg
-				v-img.image-holder(:src="require('~/assets/step-3.svg')" max-height="251" contain)
+				v-img.image-holder(:src="require('~/assets/step-3.svg')" :height="$vuetify.breakpoint.mdAndUp ? 251 : undefined" contain)
 				.step-text.ml-6.ml-sm-0.mt-sm-6
 					p.text-sm-center
 						| Vervolgens gaan we
@@ -75,7 +75,7 @@ v-container
 						|  en wensen na
 		v-col(lg="3" sm="6")
 			.custom-card.big-shadow.d-flex.flex-sm-column.pa-8.rounded-lg
-				v-img.image-holder(:src="require('~/assets/step-4.svg')" max-height="251" contain)
+				v-img.image-holder(:src="require('~/assets/step-4.svg')" :height="$vuetify.breakpoint.mdAndUp ? 251 : undefined" contain)
 				.step-text.ml-6.ml-sm-0.mt-sm-6
 					p.text-sm-center
 						| De duur van een
@@ -86,26 +86,24 @@ v-container
 			h1 Thema avonden
 			.title2 Naast energetisch genezen bieden we ook verschillende thema avonden met andere behandelaars aan.
 	v-row.mb-6
-		v-col.offset-md-2(cols="12" md="4")
-			v-card.rounded-lg(color="skin" flat)
-				v-img(:src="require('~/assets/theme-1.png')")
-				.pa-8
-					p.small.focus Behandelaar: Rob
-					h2.tertiary--text.mb-2 Infrarood massagetafel behandeling
-					p.small.tertiary--text.line-clamp De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
-					v-btn.gradient.text-none(color="tertiary" height="48" outlined rounded nuxt x-large)
-						span.small Aanmelden
-						img.ml-6(src="~/assets/arrow-right.svg")
-		v-col(cols="12" md="4")
-			v-card.rounded-lg(color="skin" flat)
-				v-img(:src="require('~/assets/theme-2.png')")
-				.pa-8
-					p.small.focus Reiki Master: Lya
-					h2.tertiary--text.mb-2 Reiki healingavond door Reikimaster Lya
-					p.small.tertiary--text.line-clamp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-					v-btn.gradient.text-none(color="tertiary" height="48" outlined rounded nuxt)
-						span.small Aanmelden
-						img.ml-3(src="~/assets/arrow-right.svg")
+		v-col.offset-lg-2.offset-md-1.offset-sm-2(cols="12" sm="8" md="5" lg="4")
+			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
+				v-img.flex-md-grow-0(:src="require('~/assets/theme-1.png')")
+				p.mx-8.mt-8.small.focus Behandelaar: Rob
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood massagetafel behandeling
+				p.mx-8.small.tertiary--text.line-clamp De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
+					span.small Aanmelden
+					img.ml-3(src="~/assets/arrow-right.svg")
+		v-col.offset-sm-2.offset-md-0(cols="12" sm="8" md="5" lg="4")
+			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
+				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.png')")
+				p.mx-8.mt-8.small.focus Reiki Master: Lya
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Reiki healingavond
+				p.mx-8.small.tertiary--text.line-clamp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
+					span.small Aanmelden
+					img.ml-3(src="~/assets/arrow-right.svg")
 </template>
 
 <style lang="sass">

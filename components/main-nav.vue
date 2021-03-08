@@ -5,13 +5,13 @@ nav.big-shadow.mx-6.mx-lg-10.pr-md-4.mt-6.mt-lg-10
 		li.menu-item(v-for="item in menuItems" :key="item")
 			a.menu-link(href="#0") {{item}}
 	.menu__button.c-pointer.d-flex.d-md-none.flex-column.justify-center(@click="overlay = !overlay")
-		img.mt-2(src="~/assets/hamburger.svg")
+		v-img.mt-2.align-self-center(:src="require('~/assets/hamburger.svg')" width="24" contain)
 		.small.white--text.text-center.mt-1 menu
 	v-overlay(:value="overlay" :opacity="1" color="skin")
 		.top-bar.mx-6.mt-6.d-flex.justify-space-between
 			v-img.ml-4.my-4(src="logo--partial.svg" contain)
 			.menu__button.menu__button--mobile.c-pointer.d-flex.d-md-none.flex-column.justify-center(@click="overlay = false")
-				img.mt-1(src="~/assets/cross.svg")
+				v-img.mt-1.align-self-center(:src="require('~/assets/cross.svg')" width="24" contain)
 				.small.primary--text.text-center sluit
 		v-container.px-9.mt-4
 			.title1.primary--text Navigeer naar...
