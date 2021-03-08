@@ -1,6 +1,7 @@
 <template lang="pug">
 v-app(light)
 	v-main
+		blur
 		main-nav
 		nuxt.content
 		v-footer(padless)
