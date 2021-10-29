@@ -4,7 +4,7 @@ v-app(light)
 		blur
 		main-nav
 		nuxt.content
-		v-footer(padless)
+		v-footer#contact(padless)
 			v-card.lightpurple(flat tile width="100%")
 				v-container
 					v-row.my-5
@@ -34,7 +34,7 @@ v-app(light)
 							v-list-item-title.small
 								| {{credit.text}}
 								a.secondary--text.text-decoration-underline(:href="credit.href" target="_blank")  {{credit.linktext}}
-				.mr-6.small 2020 © Rob Stuurman
+				.mr-6.small 2021 © Rob Stuurman
 </template>
 
 <script>

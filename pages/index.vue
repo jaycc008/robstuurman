@@ -1,6 +1,6 @@
 <template lang="pug">
 v-container
-	v-row.float-left.mb-16
+	v-row.float-left#home.offset-anchor
 		v-col.offset-xl-1(md="6")
 			h1 Energetisch genezen
 			.title1 Steeds heb ik een innerlijke gedrevenheid gevoeld om mensen bij te staan en langs spirituele weg te genezen.
@@ -11,11 +11,12 @@ v-container
 				|  werd aangereikt.
 			portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
 				event.mt-16
-		v-col.text-lg-left.text-center(md="4")
+		v-col.text-lg-left.text-center.pb-15(md="4")
 			img(src="~/assets/zen.png")
 		v-col
 			portal-target(name="destination")
-	v-row.float-left
+
+	v-row.float-left.mt-15.mb-5#about.offset-anchor
 		v-col.offset-md-1.d-flex(cols="12" md="5" order-md="2")
 			.about-me
 				h1 Over Rob Stuurman
@@ -23,10 +24,14 @@ v-container
 				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-		v-col.offset-1.offset-md-1.offset-sm-3.mb-15(cols="10" sm="6" md="3" order-md="1")
+				v-btn.mt-2.px-6.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
+					span Neem contact op
+					img.ml-6(src="~/assets/arrow-down.svg")
+		v-col.offset-1.offset-md-1.offset-sm-3(cols="10" sm="6" md="4" lg="3" order-md="1")
 			.about-picture
 				v-img.image-shadow(:src="require('~/assets/rob.png')")
-	v-row.float-left
+
+	v-row.float-left.mt-15#treatments.offset-anchor
 		v-col.offset-md-1.mb-16(md="8")
 			h1 Energetische behandelingen
 			.title2.mb-8 Als energetisch genezer kan ik u helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
@@ -34,35 +39,34 @@ v-container
 				span.focus  zowel de aarde als de geestelijke wereld
 				| . Het kosmische symbool ’Argoem’, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
 
-	v-row.float-left.mb-16
-		v-col.offset-md-1(cols="12" md="5" lg="4" style="position:relative;")
+	v-row.float-left.mb-md-16.mb-8
+		v-col.offset-lg-1.offset-1.offset-sm-2.offset-md-0.mb-8(cols="10" md="5" xl="4" style="position:relative;")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-1.png')")
-		v-col.offset-md-1.d-flex.my-auto(cols="12" md="4")
-			p.small In de loop van de jaren heb ik een ontwikkeling in innerlijke groei doorgemaakt en heb ik mij daarbij opengesteld voor het
-				span.small.focus  Christusbewustzijn
+		v-col.offset-md-1.d-flex.my-auto.offset-1.offset-sm-2(cols="10" md="6" lg="4")
+			p.small.treatment--text In de loop van de jaren heb ik een ontwikkeling in innerlijke groei doorgemaakt en heb ik mij daarbij opengesteld voor het
+				span.small.treatment--text.focus  Christusbewustzijn
 				| . Persoonlijk put ik dan ook mijn kracht uit de verbinding met God de Vader, Christus, Moeder Maria en de Engelen. Ik voel deze universele energie door mij heen stromen en gebruik deze via mijn handen om te genezen. 
 
-	v-row.float-left.mb-16
-		v-col.offset-md-1.d-flex.my-auto(cols="12" md="4")
-			p.small Onderdeel van de behandeling is het in balans brengen van de
-				span.small.focus  chakra's
+	v-row.float-left.mb-md-16.mb-8
+		v-col.offset-lg-1.d-flex.my-auto.offset-1.offset-sm-2.offset-md-0(cols="10" md="6" lg="4" order="2" order-md="1")
+			p.small.treatment--text Onderdeel van de behandeling is het in balans brengen van de
+				span.small.treatment--text.focus  chakra's
 				| . Daarna laat ik mij intuïtief leiden door de gegeven energie. Op deze manier bereik ik goede resultaten bij geestelijke, psychische en traumatische klachten maar ook ter bestrijding van lichamelijke pijn in het algemeen zoals migraine en hoofdpijn.
-		v-col.offset-md-1(cols="12" md="5" lg="4" style="position:relative;")
+		v-col.offset-md-1.offset-1.offset-sm-2.mb-8(cols="10" md="5" xl="4" style="position:relative;" order="1" order-md="2")
 			.purple-background.purple-background--right
 			v-img(:src="require('~/assets/treatment-2.png')")
 
-	v-row.float-left.mb-16
-		v-col.offset-md-1(cols="12" md="5" lg="4" style="position:relative;")
+	v-row.float-left.mb-md-16.mb-8
+		v-col.offset-lg-1.offset-1.offset-sm-2.offset-md-0.mb-8(cols="10" md="5" xl="4" style="position:relative;")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-3.png')")
-		v-col.offset-md-1.d-flex.flex-column.my-auto(cols="12" md="4")
-			p.small Ook maak ik gebruik van de technieken van
-				span.small.focus  Quantum Touch
-				| . Hiermee kunnen er snelle en opzienbare resultaten worden bereikt bij lichamelijke klachten en pijnen. Dit in het bijzonder bij disbalans van het beenderstelsel en bijbehorende spieren, zoals scheefstand van heupen, de wervels van de rug, nek of schedel.
-			p.small Lichamelijke aandoeningen hebben echter vaak een geestelijke oorzaak. Dit komt uiteraard ook aan de orde tijdens de behandeling.
+		v-col.offset-md-1.d-flex.flex-column.my-auto.offset-1.offset-sm-2(cols="10" md="6" lg="4")
+			p.small.treatment--text Ook maak ik gebruik van de technieken van
+				span.small.treatment--text.focus  Quantum Touch
+				| . Hiermee kunnen er snelle en opzienbare resultaten worden bereikt bij lichamelijke klachten en pijnen. Dit in het bijzonder bij disbalans van het beenderstelsel en bijbehorende spieren, zoals scheefstand van heupen, de wervels van de rug, nek of schedel. Lichamelijke aandoeningen hebben echter vaak een geestelijke oorzaak. Dit komt uiteraard ook aan de orde tijdens de behandeling.
 
-	v-row.mb-16.float-left
+	v-row.mb-16.float-left#method.offset-anchor
 		v-col.offset-md-1(cols="12" md="11")
 			h1 Werkwijze
 			.title2 Leer meer over hoe ik te werk ga
@@ -99,7 +103,7 @@ v-container
 		v-col.offset-1(cols="10" md="8")
 			p Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
 
-	v-row.mb-6
+	v-row.mb-6#themes.offset-anchor
 		v-col.offset-md-1(cols="12" md="8")
 			h1 Thema avonden
 			.title2 Naast energetisch genezen bieden we ook verschillende thema avonden met andere behandelaars aan.
@@ -125,9 +129,17 @@ v-container
 </template>
 
 <style lang="sass">
+.offset-anchor
+	padding-top: 180px
+	margin-top: -180px
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		padding-top: 150px
+		margin-top: -150px
+
+
+
 .about-picture
 	position: relative
-	margin-top: 80px
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
 		margin-top: 64px
 	&::before
@@ -162,6 +174,15 @@ v-container
 		right: 60px
 	&--right
 		left: 60px
+
+.treatment--text
+	@media #{map-get($display-breakpoints, 'md-only')}
+		font-size: 14px !important
+		line-height: 22px !important
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		font-size: 16px !important
+		line-height: 28px !important
+
 
 .custom-card
 	height: 100%
