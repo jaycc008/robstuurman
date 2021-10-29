@@ -1,10 +1,10 @@
 <template lang="pug">
 .event-wrapper.px-10.pt-8.pb-10
-	p.small.focus.secondary--text 12 + 13 December 2020, Van der Valk Hotel Hengelo
-	h2.mt-4 Spirituele Paraview beurs
-	p.mt-2 In december ben ik te vinden op de spirituele Paraview beurs in Hengelo, om meer te vertellen over mijn praktijk en mensen te healen.
-	v-btn.gradient.mt-2.text-none(color="tertiary" outlined rounded nuxt x-large)
-		| Bestel een kaartje
+	p.small.focus.secondary--text 7 november 2021, 11.00-17.00, De Witte Hoeve Venray
+	h2.mt-4 Spirituele Beurs
+	p.mt-2 In november zijn wij te vinden op de spirituele beurs in Venray om meer te vertellen over mijn praktijk en mensen te healen.
+	v-btn.gradient.mt-2.text-none.hover--white(color="tertiary" outlined rounded nuxt x-large href="http://likrali.nl/agenda/event/spirituele-beurs-likrali/")
+		| Meer informatie
 		img.ml-6(src="~/assets/arrow-right.svg")
 </template>
 
@@ -12,4 +12,6 @@
 .event-wrapper
 	background-color: #ECF4F7
 	border-radius: 8px 64px
+.hover--white:hover
+	color: #FFF
 </style>

@@ -113,18 +113,18 @@ v-container
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-1.png')")
 				p.mx-8.mt-8.small.focus Behandelaar: Rob
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood massagetafel behandeling
-				p.mx-8.small.tertiary--text.line-clamp De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
+				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt href="mailto:rob.stuurman@hotmail.com")
 					span.small Aanmelden
 					img.ml-3(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-2.offset-md-0(cols="12" sm="8" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.png')")
-				p.mx-8.mt-8.small.focus Reiki Master: Lya
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Reiki healingavond
-				p.mx-8.small.tertiary--text.line-clamp Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
-					span.small Aanmelden
+				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.jpg')")
+				p.mx-8.mt-8.small.focus Rob en Lya
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Middag, Thuis in Rooi
+				p.mx-8.small.tertiary--text Elke 3e zaterdag van de maand van 14:00 tot 17:00 uur zijn we te vinden in thuis in Rooi, waar verschillende spirituele onderwerpen aan bod komen en hopen we je voornamelijk te inspireren.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt href="https://www.mooirooi.nl/activiteit/all/all/all")
+					span.small Meer informatie
 					img.ml-3(src="~/assets/arrow-right.svg")
 </template>
 
