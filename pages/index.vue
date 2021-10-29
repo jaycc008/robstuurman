@@ -24,7 +24,7 @@ v-container
 				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-				v-btn.mt-2.px-6.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt)
+				v-btn.mt-2.px-6.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:rob.stuurman@hotmail.com")
 					span Neem contact op
 					img.ml-6(src="~/assets/arrow-down.svg")
 		v-col.offset-1.offset-md-1.offset-sm-3(cols="10" sm="6" md="4" lg="3" order-md="1")
@@ -114,7 +114,7 @@ v-container
 				p.mx-8.mt-8.small.focus Behandelaar: Rob
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood massagetafel behandeling
 				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt href="mailto:rob.stuurman@hotmail.com")
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:rob.stuurman@hotmail.com")
 					span.small Aanmelden
 					img.ml-3(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-2.offset-md-0(cols="12" sm="8" md="5" lg="4")
@@ -122,9 +122,9 @@ v-container
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.jpg')")
 				p.mx-8.mt-8.small.focus Rob en Lya
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Middag, Thuis in Rooi
-				p.mx-8.small.tertiary--text Elke 3e zaterdag van de maand van 14:00 tot 17:00 uur zijn we te vinden in thuis in Rooi, waar verschillende spirituele onderwerpen aan bod komen en hopen we je voornamelijk te inspireren.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start(color="tertiary" height="48" outlined rounded nuxt href="https://www.mooirooi.nl/activiteit/all/all/all")
-					span.small Meer informatie
+				p.mx-8.small.tertiary--text Op zaterdag 20 november en 18 december van 14:00 tot 17:00 uur zijn we te vinden in thuis in Rooi, waar verschillende spirituele onderwerpen aan bod komen en hopen we je voornamelijk te inspireren.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="https://www.google.com/maps/place/Markt+19,+5492+AA+Sint-Oedenrode/@51.5639572,5.4585819,17z/data=!3m1!4b1!4m5!3m4!1s0x47c6e0ac48cfa813:0xf383b39d78a48967!8m2!3d51.5639572!4d5.4607706")
+					span.small Bekijk locatie
 					img.ml-3(src="~/assets/arrow-right.svg")
 </template>
 
@@ -205,4 +205,7 @@ v-container
 	-webkit-line-clamp: 2
 	-webkit-box-orient: vertical
 	white-space: normal
+
+.hover--white:hover
+	color: #FFF
 </style>
