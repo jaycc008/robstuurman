@@ -2,8 +2,8 @@
 nav.big-shadow.mx-6.mx-lg-10.pr-md-4.mt-6.mt-lg-10
 	v-img.logo.ml-4.my-4.ml-md-8(src="logo.svg" max-height="64" max-width="223" contain)
 	ul.menu.d-none.d-md-flex
-		li.menu-item(v-for="item in menuItems" :key="item")
-			a.menu-link(href="#0") {{item}}
+		li.menu-item(v-for="item in menuItems" :key="item.href")
+			a.menu-link(:href="item.href") {{item.text}}
 	.menu__button.c-pointer.d-flex.d-md-none.flex-column.justify-center(@click="overlay = !overlay")
 		v-img.mt-2.align-self-center(:src="require('~/assets/hamburger.svg')" width="24" contain)
 		.small.white--text.text-center.mt-1 menu
@@ -16,8 +16,8 @@ nav.big-shadow.mx-6.mx-lg-10.pr-md-4.mt-6.mt-lg-10
 		v-container.px-9.mt-4
 			.title1.primary--text Navigeer naar...
 			ul.mt-6
-				li.menu-item.mb-4(v-for="item in menuItems" :key="item")
-					v-btn.rounded-lg.primary--text.text-none.justify-start(href="#0" color="white" height="64" block depressed ) {{item}}
+				li.menu-item.mb-4(v-for="item in menuItems" :key="item.href")
+					v-btn.rounded-lg.primary--text.text-none.justify-start(:href="item.href" color="white" height="64" block depressed @click="overlay = false") {{item.text}}
 
 </template>
 
@@ -106,7 +106,13 @@ nav
 export default {
 	data() {
 		return {
-			menuItems: ['Home', 'Over', 'Behandelingen', 'Thema avonden', 'Contact'],
+			menuItems: [
+				{ href: '#home', text: 'Home' },
+				{ href: '#about', text: 'Over' },
+				{ href: '#treatments', text: 'Behandelingen' },
+				{ href: '#themes', text: 'Thema avonden' },
+				{ href: '#contact', text: 'Contact' },
+			],
 			overlay: false,
 		}
 	},
