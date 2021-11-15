@@ -88,6 +88,15 @@ p, span
 
 @import '~vuetify/src/styles/styles.sass'
 
+@media #{map-get($display-breakpoints, 'md-and-down')}
+	.title1
+		font-size: 32px
+		line-height: 36px
+
+	.title2
+		font-size: 28px
+		line-height: 36px
+
 @media #{map-get($display-breakpoints, 'sm-and-down')}
 	p, span
 		font-family: $body-font-family, sans-serif !important
@@ -99,10 +108,6 @@ p, span
 	.small
 		font-size: 13px
 		line-height: 22px
-
-	.title1
-		font-size: 24px
-		line-height: 36px
 
 	// .title2
 	// 	font-size: $line-height-root
