@@ -4,7 +4,7 @@ v-app(light)
 		blur
 		main-nav
 		nuxt.content
-		v-footer#contact(padless)
+		v-footer.float-left.full-width#contact(padless)
 			v-card.lightpurple(flat tile width="100%")
 				v-container
 					v-row.my-5
