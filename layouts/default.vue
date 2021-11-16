@@ -15,16 +15,16 @@ v-app(light)
 								ul
 									li.d-inline-flex.address-list-item
 										v-img.mr-4(:src="require('~/assets/mail.svg')" height="40" max-width="40")
-										p.address-line rob.stuurman@hotmail.com
+										a.address-line(href="mailto:rob.stuurman@hotmail.com" rel="nofollow") rob.stuurman@hotmail.com
 									li.d-inline-flex.address-list-item
 										v-img.mr-4(:src="require('~/assets/phone.svg')" height="40" max-width="40")
-										p.address-line 06 13 15 69 55
+										a.address-line(href="tel:+31613156955" rel="nofollow") 06 13156955
 									li.d-inline-flex.address-list-item
 										v-img.mr-4(:src="require('~/assets/home.svg')" height="40" max-width="40")
 										p.address-line Lupinestraat 15, 5492KD, Sint-Oedenrode
 						v-col.offset-md-1(cols="4" v-if="$vuetify.breakpoint.mdAndUp")
 							.full-height.d-flex.justify-center
-								v-img(:src="require('~/assets/argoem.png')" contain)
+								v-img(:src="require('~/assets/argoem.png')" contain eager)
 			.full-width.d-flex.justify-end.my-3
 				v-menu(offset-y top)
 					template(v-slot:activator="{ on, attrs }")
