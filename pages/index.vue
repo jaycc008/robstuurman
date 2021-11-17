@@ -230,6 +230,6 @@ v-container(fluid)
 	-webkit-box-orient: vertical
 	white-space: normal
 
-.hover--white:hover
+.v-btn.hover--white:hover
 	color: #FFF
 </style>

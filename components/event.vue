@@ -12,6 +12,6 @@
 .event-wrapper
 	background-color: #ECF4F7
 	border-radius: 8px 64px
-.hover--white:hover
+.v-btn.hover--white:hover
 	color: #FFF !important
 </style>
