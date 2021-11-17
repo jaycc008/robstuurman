@@ -231,5 +231,5 @@ v-container(fluid)
 	white-space: normal
 
 .v-btn.hover--white:hover
-	color: #FFF
+	color: #FFF !important
 </style>
