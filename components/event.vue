@@ -13,5 +13,5 @@
 	background-color: #ECF4F7
 	border-radius: 8px 64px
 .hover--white:hover
-	color: #FFF
+	color: #FFF !important
 </style>
