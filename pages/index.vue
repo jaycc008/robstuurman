@@ -9,12 +9,14 @@ v-container(fluid)
 				|  en kosmische naam 
 				span.focus  Lar
 				|  werd aangereikt.
-			//- portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
+			//- Comment onderstaande line uit nadat event over is
+			portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
 				event.mt-16
 		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5.pb-md-15(cols="12" md="4" sm="10")
 			img.d-none.d-md-block(src="~/assets/zen.png")
 			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
-		//- v-col
+		//- Comment onderstaande line uit nadat event over is
+		v-col 
 			portal-target(name="destination")
 
 	v-row.float-left.mb-5#about.offset-anchor
