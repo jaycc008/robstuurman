@@ -16,7 +16,7 @@ v-container(fluid)
 			img.d-none.d-md-block(src="~/assets/zen.png")
 			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
 		//- Comment onderstaande line uit nadat event over is
-		v-col 
+		v-col
 			portal-target(name="destination")
 
 	v-row.float-left.mb-5#about.offset-anchor
@@ -113,23 +113,32 @@ v-container(fluid)
 			h1 Thema avonden
 			.title2 Naast energetisch genezen bieden we ook verschillende thema avonden met andere behandelaars aan.
 	v-row.float-left.mb-11
-		v-col.offset-sm-1(cols="12" sm="10" md="5" lg="4")
+		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-1.png')" eager)
-				p.mx-8.mt-8.small.focus Behandelaar: Rob
+				p.mx-8.mt-8.small.focus Energetisch Genezer Rob
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood massagetafel behandeling
 				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt rel="nofollow" href="mailto:rob.stuurman@hotmail.com")
-					span.small Aanmelden
+					span.small Stuur een mail
 					img.ml-3(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.jpg')" eager)
-				p.mx-8.mt-8.small.focus Rob en Lya
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Middag, Thuis in Rooi
-				p.mx-8.small.tertiary--text Op zaterdag 20 november en 18 december van 14:00 tot 17:00 uur zijn we te vinden in thuis in Rooi, waar verschillende spirituele onderwerpen aan bod komen en hopen we je voornamelijk te inspireren.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt target="_blank" href="https://www.google.com/maps/place/Markt+19,+5492+AA+Sint-Oedenrode/@51.5639572,5.4585819,17z/data=!3m1!4b1!4m5!3m4!1s0x47c6e0ac48cfa813:0xf383b39d78a48967!8m2!3d51.5639572!4d5.4607706")
-					span.small Bekijk locatie
+				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.jpg')" eager)
+				p.mx-8.mt-8.small.focus Reiki Master Lya
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Reiki Behandeling
+				p.mx-8.small.tertiary--text Energie is overal om ons heen en reiki is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren; Het is een universele liefdes energie die ik door mag geven.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
+					span.small Stuur een mail
+					img.ml-3(src="~/assets/arrow-right.svg")
+		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
+			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
+				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.svg')" eager)
+				p.mx-8.mt-8.small.focus Beurs in de Beckart in Nijnsel
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele beurs in Nijnsel in ontwikkeling
+				p.mx-8.small.tertiary--text We zijn met de Beckart in Nijnsel in overleg om 2x per jaar een spirituele beurs te organiseren. Lijkt het je leuk om ook deel te nemen aan deze beurs? Neem dan contact met ons op.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
+					span.small Stuur een mail
 					img.ml-3(src="~/assets/arrow-right.svg")
 </template>
 
