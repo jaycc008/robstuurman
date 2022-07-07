@@ -117,7 +117,7 @@ v-container(fluid)
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-1.png')" eager)
 				p.mx-8.mt-8.small.focus Energetisch Genezer Rob
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood massagetafel behandeling
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood behandeling
 				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt rel="nofollow" href="mailto:rob.stuurman@hotmail.com")
 					span.small Stuur een mail
@@ -134,11 +134,11 @@ v-container(fluid)
 		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.svg')" eager)
-				p.mx-8.mt-8.small.focus Beurs in de Beckart in Nijnsel
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele beurs in Nijnsel in ontwikkeling
-				p.mx-8.small.tertiary--text We zijn met de Beckart in Nijnsel in overleg om 2x per jaar een spirituele beurs te organiseren. Lijkt het je leuk om ook deel te nemen aan deze beurs? Neem dan contact met ons op.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
-					span.small Stuur een mail
+				p.mx-8.mt-8.small.focus De Beckart in Nijnsel
+				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Beurs Souls
+				p.mx-8.small.tertiary--text De Spirituele Beurs Souls in de Beckart is een feit! Zaterdag 29 oktober 2022 vanaf 10.00 zal de eerste editie plaatsvinden, entree kost slechts €2,-. Voor het laatste nieuws hou onze Facebook pagina in de gaten.
+				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" target="_blank" outlined rounded nuxt href="https://www.facebook.com/soulsspirituelebeurs")
+					span.small Facebook Pagina
 					img.ml-3(src="~/assets/arrow-right.svg")
 </template>
 
