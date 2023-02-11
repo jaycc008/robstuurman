@@ -1,17 +1,67 @@
 <template lang="pug">
-.event-wrapper.px-10.pt-8.pb-10
-	p.small.focus.secondary--text 26 februari 2023 11.00 - 17.00
-	h2.mt-4 Zielsgelukkig Spirituele Beurs - Kloosterhotel Willibrordhaeghe
-	p.mt-2 Vlierdenseweg 109 te Deurne
-	v-btn.gradient.mt-2.text-none.hover--white(color="tertiary" target="_blank" outlined rounded nuxt x-large href="https://zielsgelukkigverbinding.nl/")
-		| Meer informatie
-		img.ml-6(src="~/assets/arrow-right.svg")
+v-row.mb-1
+	v-col.offset-1(cols="1" height="108")
+		.d-flex.flex-column.align-center.justify-center
+			span.day {{event.date.getDate()}}
+			span.month {{getDutchMonth}}
+	v-col.lightpurple2(cols="2")
+		v-img(:src="event.img" max-height="91" contain)
+	v-col(cols="7")
+		a(:href="event.href")
+			.d-flex.justify-space-between.full-height
+				.d-flex.flex-column
+					.my-auto
+						h2 {{event.name}}
+						div
+							strong {{event.text_1}}
+							|  {{event.text_2}}
+				img(src="~/assets/arrow-right.svg" width="24")
 </template>
 
 <style lang="sass">
-.event-wrapper
-	background-color: #ECF4F7
-	border-radius: 8px 64px
-.v-btn.hover--white:hover
-	color: #FFF !important
+.day
+	font-family: 'Poppins'
+	font-weight: 700
+	font-size: 24px
+	line-height: 40px
+	padding-top: 10px
+
+.month
+	font-family: 'Poppins'
+	font-size: 16px
+	line-height: 28px
 </style>
+
+<script>
+export default {
+	props: {
+		event: {
+			type: Object,
+			required: true,
+		},
+	},
+	data() {
+		return {
+			months: [
+				'Jan',
+				'Feb',
+				'Maa',
+				'Apr',
+				'Mei',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Okt',
+				'Nov',
+				'Dec',
+			],
+		}
+	},
+	computed: {
+		getDutchMonth() {
+			return this.months[this.event.date.getMonth()]
+		},
+	},
+}
+</script>
