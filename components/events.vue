@@ -1,7 +1,7 @@
 <template lang="pug">
 .events-wrapper
 	v-row
-		v-col.offset-1
+		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			.h1 Beurzen kalender
 	event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event")
 
@@ -70,14 +70,6 @@ export default {
 					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
-				// {
-				// 	date: new Date('2023-06-24'),
-				// 	img: require(`~/a'sets/???.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Nederasselt.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
 				{
 					date: new Date('2023-07-30'),
 					img: require('~/assets/buitenlust.svg'),
@@ -120,7 +112,7 @@ export default {
 				},
 				{
 					date: new Date('2023-11-05'),
-					img: '', // require('~/assets/likrali.svg'),
+					img: require('~/assets/likrali.svg'),
 					name: 'LiKraLi',
 					text_1: '11.00 - 17.00 Venray.',
 					text_2: 'De Witte Hoeve (Gasstraat 5)',
@@ -140,7 +132,7 @@ export default {
 					img: require('~/assets/einder.svg'),
 					name: 'Spirituele beurs Lightning',
 					text_1: '10.30 - 17.00 Hapert.',
-					text_2: '???',
+					text_2: '',
 					href: '',
 				},
 			],

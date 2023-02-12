@@ -1,12 +1,12 @@
 <template lang="pug">
 v-row.mb-1
-	v-col.offset-1(cols="1" height="108")
+	v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="1" height="108")
 		.d-flex.flex-column.align-center.justify-center
 			span.day {{event.date.getDate()}}
 			span.month {{getDutchMonth}}
-	v-col.lightpurple2(cols="2")
+	v-col.d-none.d-md-block.lightpurple2(cols="2")
 		v-img(:src="event.img" max-height="91" contain)
-	v-col(cols="7")
+	v-col(cols="11" sm="9" lg="7")
 		a(:href="event.href")
 			.d-flex.justify-space-between.full-height
 				.d-flex.flex-column
@@ -15,7 +15,7 @@ v-row.mb-1
 						div
 							strong {{event.text_1}}
 							|  {{event.text_2}}
-				img(src="~/assets/arrow-right.svg" width="24")
+				img.pl-1(src="~/assets/arrow-right.svg" width="24")
 </template>
 
 <style lang="sass">
