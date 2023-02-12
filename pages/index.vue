@@ -7,17 +7,19 @@ v-container(fluid)
 			p.mt-8 Een bijzonder moment was die waarop mij een persoonlijk en kosmisch symbool 
 				span.focus  Argoem
 				|  en kosmische naam 
-				span.focus  Lar
+				span.focus  Loor
 				|  werd aangereikt.
 			//- Comment onderstaande line uit nadat event over is
-			portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
-				event.mt-16
+		//- v-col.offset-lg-1.offset-sm-1(cols="12" sm="10" md="6")
+		//- 	portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
+		//- 		events.pt-4.mt-16.mb-2
 		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5.pb-md-15(cols="12" md="4" sm="10")
 			img.d-none.d-md-block(src="~/assets/zen.png")
 			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
 		//- Comment onderstaande line uit nadat event over is
-		v-col
-			portal-target(name="destination")
+
+	events.pt-4.mt-16.mb-2
+
 
 	v-row.float-left.mb-5#about.offset-anchor
 		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")

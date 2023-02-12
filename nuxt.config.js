@@ -74,6 +74,7 @@ export default {
 					tertiary: '#47537F', // blue
 					skin: '#FFECE5', // zalmroze
 					lightpurple: '#F1EBF5',
+					lightpurple2: '#F8F9FA',
 					info: colors.teal.lighten1,
 					warning: colors.amber.base,
 					error: colors.deepOrange.accent4,
