@@ -1,15 +1,67 @@
 <template lang="pug">
-.event-wrapper.px-10.pt-8.pb-10
-	p.small.focus.secondary--text 12 + 13 December 2020, Van der Valk Hotel Hengelo
-	h2.mt-4 Spirituele Paraview beurs
-	p.mt-2 In december ben ik te vinden op de spirituele Paraview beurs in Hengelo, om meer te vertellen over mijn praktijk en mensen te healen.
-	v-btn.gradient.mt-2.text-none(color="tertiary" outlined rounded nuxt x-large)
-		| Bestel een kaartje
-		img.ml-6(src="~/assets/arrow-right.svg")
+v-row.mb-1
+	v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="2" sm="1" height="108")
+		.d-flex.flex-column.align-center.justify-center
+			span.day {{event.date.getDate()}}
+			span.month {{getDutchMonth}}
+	v-col.d-none.d-md-block.lightpurple2(cols="2")
+		v-img(:src="event.img" max-height="91" contain)
+	v-col(cols="10" sm="9" lg="7")
+		a(:href="event.href" target="_blank")
+			.d-flex.justify-space-between.full-height
+				.d-flex.flex-column
+					.my-auto
+						h2 {{event.name}}
+						div
+							strong {{event.text_1}}
+							|  {{event.text_2}}
+				img.pl-1(src="~/assets/arrow-right.svg" width="24")
 </template>
 
 <style lang="sass">
-.event-wrapper
-	background-color: #ECF4F7
-	border-radius: 8px 64px
+.day
+	font-family: 'Poppins'
+	font-weight: 700
+	font-size: 24px
+	line-height: 40px
+	padding-top: 10px
+
+.month
+	font-family: 'Poppins'
+	font-size: 16px
+	line-height: 28px
 </style>
+
+<script>
+export default {
+	props: {
+		event: {
+			type: Object,
+			required: true,
+		},
+	},
+	data() {
+		return {
+			months: [
+				'Jan',
+				'Feb',
+				'Maa',
+				'Apr',
+				'Mei',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Okt',
+				'Nov',
+				'Dec',
+			],
+		}
+	},
+	computed: {
+		getDutchMonth() {
+			return this.months[this.event.date.getMonth()]
+		},
+	},
+}
+</script>
