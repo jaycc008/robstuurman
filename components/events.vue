@@ -15,7 +15,7 @@ export default {
 		return {
 			events: [
 				{
-					date: new Date('2023-02-26T18:00:00.000Z'),
+					date: new Date(2023, 1, 26, 18),
 					img: require('~/assets/zielsgelukkig.svg'),
 					name: 'Zielsgelukkig Spirituele beurs',
 					text_1: '11.00 - 17.00 Deurne.',
@@ -23,7 +23,7 @@ export default {
 					href: 'https://zielsgelukkigverbinding.nl/',
 				},
 				{
-					date: new Date('2023-03-19'),
+					date: new Date(2023, 2, 19, 18),
 					img: require('~/assets/einder.svg'),
 					name: 'Spirituele beurs Lightning',
 					text_1: '10.30 - 17.00 Someren-Eind.',
@@ -31,7 +31,7 @@ export default {
 					href: 'https://www.facebook.com/events/703587454908443/',
 				},
 				{
-					date: new Date('2023-03-26'),
+					date: new Date(2023, 2, 26, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -39,7 +39,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-04-02'),
+					date: new Date(2023, 3, 2, 18),
 					img: require('~/assets/souls_logo.svg'),
 					name: 'Spirituele beurs Souls',
 					text_1: '10.00 - 17.00 Nijnsel.',
@@ -47,7 +47,7 @@ export default {
 					href: 'https://www.facebook.com/events/694063912411987',
 				},
 				{
-					date: new Date('2023-04-30'),
+					date: new Date(2023, 3, 30, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -55,7 +55,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-05-28'),
+					date: new Date(2023, 4, 28, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -63,7 +63,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-06-25'),
+					date: new Date(2023, 5, 25, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -71,7 +71,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-07-30'),
+					date: new Date(2023, 6, 30, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -79,7 +79,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-08-27'),
+					date: new Date(2023, 7, 27, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -87,7 +87,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-09-24'),
+					date: new Date(2023, 8, 24, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -95,7 +95,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-10-22'),
+					date: new Date(2023, 9, 22, 18),
 					img: require('~/assets/souls_logo.svg'),
 					name: 'Spirituele beurs Souls',
 					text_1: '10.00 - 17.00 Nijnsel.',
@@ -103,7 +103,7 @@ export default {
 					href: '',
 				},
 				{
-					date: new Date('2023-10-29'),
+					date: new Date(2023, 9, 29, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
@@ -111,7 +111,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date('2023-11-05'),
+					date: new Date(2023, 10, 4, 18),
 					img: require('~/assets/likrali.svg'),
 					name: 'LiKraLi',
 					text_1: '11.00 - 17.00 Venray.',
@@ -120,7 +120,7 @@ export default {
 						'https://www.facebook.com/groups/368354643682751/permalink/1593958921122311/',
 				},
 				{
-					date: new Date('2023-11-26'),
+					date: new Date(2023, 10, 26, 18),
 					img: require('~/assets/einder.svg'),
 					name: 'Spirituele beurs Lightning',
 					text_1: '10.30 - 17.00 Someren-Eind.',
@@ -128,7 +128,7 @@ export default {
 					href: '',
 				},
 				{
-					date: new Date('2024-01-14'),
+					date: new Date(2024, 0, 14, 18),
 					img: require('~/assets/einder.svg'),
 					name: 'Spirituele beurs Lightning',
 					text_1: '10.30 - 17.00 Hapert.',
