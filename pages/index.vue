@@ -8,18 +8,11 @@ v-container(fluid)
 				span.focus  Argoem
 				|  en kosmische naam 
 				span.focus  Loor
-				|  werd aangereikt.
-			//- Comment onderstaande line uit nadat event over is
-		//- v-col.offset-lg-1.offset-sm-1(cols="12" sm="10" md="6")
-		//- 	portal(to="destination" v-bind:disabled="$vuetify.breakpoint.lgAndUp")
-		//- 		events.pt-4.mt-16.mb-2
 		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5.pb-md-15(cols="12" md="4" sm="10")
 			img.d-none.d-md-block(src="~/assets/zen.png")
 			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
-		//- Comment onderstaande line uit nadat event over is
 
 	events.pt-4.mt-16.mb-2
-
 
 	v-row.float-left.mb-5#about.offset-anchor
 		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")
@@ -35,6 +28,13 @@ v-container(fluid)
 				v-btn.mt-2.px-6.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="#contact")
 					span Neem contact op
 					img.ml-6(src="~/assets/arrow-down.svg")
+
+
+	v-row.mt-16
+		v-col.offset-sm-1(cols="12" sm="10")
+			h1 Podcast
+			.title2.mb-6 Interview bij Zelfwerkzaamheid
+			yt-video
 
 	v-row.float-left#treatments.offset-anchor
 		v-col.offset-sm-1.mb-0.mb-sm-8.mb-md-16(md="8" sm="10")
