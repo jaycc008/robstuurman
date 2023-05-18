@@ -63,12 +63,28 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date(2023, 5, 21, 18),
+					date: new Date(2023, 4, 21, 18),
 					img: require('~/assets/zielsgelukkig.svg'),
 					name: 'Zielsgelukkig Spirituele beurs',
 					text_1: '10.00 - 16.00 Berg en Dal.',
 					text_2: 'Fletcher Hotel-Restaurant Erica (Molenbosweg 17)',
 					href: 'https://www.facebook.com/events/6246930658650927',
+				},
+				{
+					date: new Date(2023, 5, 11, 18),
+					img: require('~/assets/einder.svg'),
+					name: 'Spirituele beurs Lightning',
+					text_1: '10.30 - 17.00 Someren-Eind.',
+					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
+					href: '',
+				},
+				{
+					date: new Date(2023, 5, 24, 18),
+					img: require('~/assets/natuurhuisje.svg'),
+					name: 'Leefstijl Feest',
+					text_1: '11.00 - 16.00 Nederasselt.',
+					text_2: 'Natuurhuisje (Sluisweg 1)',
+					href: 'https://www.facebook.com/profile.php?id=100077136530443',
 				},
 				{
 					date: new Date(2023, 5, 25, 18),
@@ -79,12 +95,13 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date(2023, 6, 11, 18),
-					img: require('~/assets/einder.svg'),
-					name: 'Spirituele beurs Lightning',
-					text_1: '10.30 - 17.00 Someren-Eind.',
-					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
-					href: '',
+					date: new Date(2023, 6, 2, 18),
+					img: require('~/assets/zielsgelukkig.svg'),
+					name: 'Zielsgelukkig Spirituele beurs',
+					text_1: '10.00 - 16.00 Noordwijk.',
+					text_2: 'Fletcher Hotel-Restaurant De Witte Raaf (Duinweg 117)',
+					href:
+						'https://www.facebook.com/events/s/zielsgelukkig-festival/599935065332942/',
 				},
 				{
 					date: new Date(2023, 6, 30, 18),
@@ -93,23 +110,6 @@ export default {
 					text_1: '10.00 - 17.00 Vught.',
 					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: new Date(2023, 6, 24, 18),
-					img: require('~/assets/natuurhuisje.svg'),
-					name: 'Leefstijl Feest',
-					text_1: '11.00 - 16.00 Nederasselt.',
-					text_2: 'Natuurhuisje (Sluisweg 1)',
-					href: 'https://www.facebook.com/profile.php?id=100077136530443',
-				},
-				{
-					date: new Date(2023, 7, 2, 18),
-					img: require('~/assets/zielsgelukkig.svg'),
-					name: 'Zielsgelukkig Spirituele beurs',
-					text_1: '10.00 - 16.00 Noordwijk.',
-					text_2: 'Fletcher Hotel-Restaurant De Witte Raaf (Duinweg 117)',
-					href:
-						'https://www.facebook.com/events/s/zielsgelukkig-festival/599935065332942/',
 				},
 				{
 					date: new Date(2023, 7, 27, 18),
@@ -128,6 +128,14 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
+					date: new Date(2023, 9, 8, 18),
+					img: require('~/assets/einder.svg'),
+					name: 'Spirituele beurs Lightning',
+					text_1: '10.30 - 17.00 Hapert.',
+					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
+					href: '',
+				},
+				{
 					date: new Date(2023, 9, 22, 18),
 					img: require('~/assets/souls_logo.svg'),
 					name: 'Spirituele beurs Souls',
@@ -144,7 +152,7 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
-					date: new Date(2023, 10, 4, 18),
+					date: new Date(2023, 10, 5, 18),
 					img: require('~/assets/likrali.svg'),
 					name: 'LiKraLi',
 					text_1: '11.00 - 17.00 Venray.',

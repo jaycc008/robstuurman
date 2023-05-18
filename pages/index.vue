@@ -42,7 +42,7 @@ v-container(fluid)
 			.title2.mb-8 Als energetisch genezer kan ik u helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
 			p Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
 				span.focus  zowel de aarde als de geestelijke wereld
-				| . Het kosmische symbool ’Argoem’, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
+				| . Het kosmische symbool &lsquo;Argoem&rsquo;, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
 
 	v-row.float-left.mb-md-16.mb-sm-8
 		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;")
