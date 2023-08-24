@@ -112,6 +112,14 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
+					date: new Date(2023, 7, 26, 18),
+					img: require('~/assets/bibliotheekoostland.svg'),
+					name: 'Paranormale Beurs',
+					text_1: '10.00 - 17.00 Bergschenhoek.',
+					text_2: 'Koffie en Theetuin Buitenlust (Wilhelminastraat 1A)',
+					href: 'https://www.facebook.com/events/3691329454526363',
+				},
+				{
 					date: new Date(2023, 7, 27, 18),
 					img: require('~/assets/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
@@ -136,7 +144,7 @@ export default {
 					href: '',
 				},
 				{
-					date: new Date(2023, 9, 22, 18),
+					date: new Date(2023, 9, 15, 18),
 					img: require('~/assets/souls_logo.svg'),
 					name: 'Spirituele beurs Souls',
 					text_1: '10.00 - 17.00 Nijnsel.',
