@@ -61,8 +61,6 @@ export default {
 	},
 	computed: {
 		getDutchMonth() {
-			// eslint-disable-next-line no-console
-			console.log(this.event)
 			return this.months[this.event.date.getMonth()]
 		},
 	},
