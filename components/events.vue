@@ -116,7 +116,7 @@ export default {
 					img: require('~/assets/bibliotheekoostland.svg'),
 					name: 'Paranormale Beurs',
 					text_1: '10.00 - 17.00 Bergschenhoek.',
-					text_2: 'Koffie en Theetuin Buitenlust (Wilhelminastraat 1A)',
+					text_2: 'Bibliotheek Oostland (Wilhelminastraat 1A)',
 					href: 'https://www.facebook.com/events/3691329454526363',
 				},
 				{
