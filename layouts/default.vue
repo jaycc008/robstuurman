@@ -25,7 +25,7 @@ v-app(light)
 										v-img.mr-4.flex-grow-0(:src="require('~/assets/gps.svg')" height="40" width="40")
 										a.address-line(href="https://goo.gl/maps/ypBniShYGVxh2tYJ7" rel="nofollow" target="_blank") Lupinestraat 15, 5492KD, Sint-Oedenrode
 									li.d-inline-flex.address-list-item
-										v-img.mr-4.flex-grow-0(:src="require('~/assets/souls_logo.svg')" height="40" width="40")
+										v-img.mr-4.flex-grow-0(:src="require('~/assets/event-images/souls_logo.svg')" height="40" width="40")
 										a.address-line(href="https://www.facebook.com/soulsspirituelebeurs" rel="nofollow" target="_blank") Souls Spirituele Beurs
 						v-col.my-n5.offset-md-1(cols="4" v-if="$vuetify.breakpoint.mdAndUp" order='3')
 							.full-height.d-flex.justify-center

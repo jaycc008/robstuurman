@@ -4,8 +4,9 @@ v-row.mb-1
 		.d-flex.flex-column.align-center.justify-center
 			span.day {{event.date.getDate()}}
 			span.month {{getDutchMonth}}
-	v-col.d-none.d-md-block.lightpurple2(cols="2")
-		v-img(:src="event.img" max-height="91" contain)
+	v-col.d-none.d-md-flex.align-center.justify-center.lightpurple2(cols="2")
+		v-img(:src="event.img" max-height="91" contain v-if="event.img")
+		strong.m-auto.text-center(v-if="!event.img") {{event.text_logo}}
 	v-col(cols="10" sm="9" lg="7")
 		a(:href="event.href" target="_blank")
 			.d-flex.justify-space-between.full-height
