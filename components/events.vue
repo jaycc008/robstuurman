@@ -100,8 +100,7 @@ export default {
 					name: 'Zielsgelukkig Spirituele beurs',
 					text_1: '10.00 - 16.00 Noordwijk.',
 					text_2: 'Fletcher Hotel-Restaurant De Witte Raaf (Duinweg 117)',
-					href:
-						'https://www.facebook.com/events/s/zielsgelukkig-festival/599935065332942/',
+					href: 'https://www.facebook.com/events/s/zielsgelukkig-festival/599935065332942/',
 				},
 				{
 					date: new Date(2023, 6, 30, 18),
@@ -139,11 +138,11 @@ export default {
 				},
 				{
 					date: new Date(2023, 9, 8, 18),
-					img: require('~/assets/event-images/einder.svg'),
-					name: 'Spirituele beurs Lightning',
-					text_1: '10.30 - 17.00 Hapert.',
-					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
-					href: 'https://gemeenschapshuis-de-einder.nl/',
+					text_logo: 'De Donderie',
+					name: 'Roermond Spiritueel',
+					text_1: '10.00 - 17.00 Roermond.',
+					text_2: 'De Donderie (Donderbergweg 47)',
+					href: 'https://www.facebook.com/profile.php?id=61551055863898',
 				},
 				{
 					date: new Date(2023, 9, 15, 18),
@@ -151,8 +150,7 @@ export default {
 					name: 'Spirituele beurs Souls',
 					text_1: '10.00 - 17.00 Nijnsel.',
 					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
-					href:
-						'https://www.facebook.com/events/752166309720601?acontext=%7B%22event_action_history%22%3A[]%7D',
+					href: 'https://www.facebook.com/events/752166309720601?acontext=%7B%22event_action_history%22%3A[]%7D',
 				},
 				{
 					date: new Date(2023, 9, 28, 18),
@@ -160,8 +158,7 @@ export default {
 					text_logo: 'Dorpshuis Zeddam',
 					text_1: '11.00 - 17.00 Zeddam.',
 					text_2: 'Het Dorpshuis (Gerrit Varwijckplein 25)',
-					href:
-						'https://www.facebook.com/groups/571813376237192/permalink/6559883924096744/?sfnsn=mo&ref=share',
+					href: 'https://www.facebook.com/groups/571813376237192/permalink/6559883924096744/?sfnsn=mo&ref=share',
 				},
 				{
 					date: new Date(2023, 9, 29, 18),
@@ -177,8 +174,7 @@ export default {
 					name: 'LiKraLi',
 					text_1: '11.00 - 17.00 Venray.',
 					text_2: 'De Witte Hoeve (Gasstraat 5)',
-					href:
-						'https://www.facebook.com/groups/368354643682751/permalink/1593958921122311/',
+					href: 'https://www.facebook.com/groups/368354643682751/permalink/1593958921122311/',
 				},
 				{
 					date: new Date(2023, 10, 12, 18),
@@ -186,8 +182,7 @@ export default {
 					name: 'Heavenly Heart Spirituele beurs',
 					text_1: '11.00 - 17.00 Eindhoven.',
 					text_2: 'Gemeenschapscentrum Lievendaal (Lievendaalseweg 3)',
-					href:
-						'https://www.facebook.com/groups/571813376237192/permalink/6505747856177018/?sfnsn=mo&ref=share',
+					href: 'https://www.facebook.com/groups/571813376237192/permalink/6505747856177018/?sfnsn=mo&ref=share',
 				},
 				{
 					date: new Date(2023, 10, 26, 18),
@@ -211,8 +206,7 @@ export default {
 					name: 'Bewust, Gezond & Alternatief Beurs',
 					text_1: '11.00 - 16.00 Druten.',
 					text_2: 'De Bogerd (Van Heemstraweg 53)',
-					href:
-						'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
+					href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
 				},
 			],
 		}
