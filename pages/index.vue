@@ -117,7 +117,7 @@ v-container(fluid)
 	v-row.float-left.mb-11
 		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-1.png')" eager)
+				v-img.flex-md-grow-0(:src="require('~/assets/infraroodtafel.jpg')" eager)
 				p.mx-8.mt-8.small.focus Energetisch Genezer Rob
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood behandeling
 				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
@@ -135,7 +135,7 @@ v-container(fluid)
 					img.ml-3(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-3.svg')" eager)
+				v-img.flex-md-grow-0(:src="require('~/assets/beurs.jpg')" eager)
 				p.mx-8.mt-8.small.focus De Beckart in Nijnsel
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Beurs Souls
 				p.mx-8.small.tertiary--text De derde versie van Spirituele Beurs Souls in de Beckart in Nijnsel is op zondag 15 oktober 2023 vanaf 10.00, entree kost slechts €2,-. Voor het laatste nieuws hou onze Facebook pagina in de gaten.

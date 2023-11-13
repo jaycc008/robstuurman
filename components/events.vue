@@ -193,12 +193,12 @@ export default {
 					href: 'https://gemeenschapshuis-de-einder.nl/',
 				},
 				{
-					date: new Date(2024, 0, 14, 18),
-					img: require('~/assets/event-images/einder.svg'),
-					name: 'Spirituele beurs Lightning',
-					text_1: '10.30 - 17.00 Hapert.',
-					text_2: '',
-					href: '',
+					date: new Date(2023, 11, 10, 18),
+					text_logo: 'Princeville',
+					name: 'Grote Spirituele Beurs',
+					text_1: '11.00 - 17.00 Breda.',
+					text_2: 'Hotel Princeville (Princenhagelaan 5)',
+					href: 'https://www.vandervalkbreda.com/',
 				},
 				{
 					date: new Date(2024, 3, 1, 18),
