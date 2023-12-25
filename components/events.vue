@@ -201,12 +201,28 @@ export default {
 					href: 'https://www.vandervalkbreda.com/',
 				},
 				{
+					date: new Date(2023, 11, 30, 18),
+					img: require('~/assets/event-images/bibliotheekoostland.svg'),
+					name: 'Spirituele Winter Wonderland',
+					text_1: '10.00 - 17.00 Bergschenhoek.',
+					text_2: 'Bibliotheek Oostland (Wilhelminastraat 1A)',
+					href: 'https://www.facebook.com/groups/571813376237192/permalink/6933955503356249/',
+				},
+				{
 					date: new Date(2024, 3, 1, 18),
 					img: require('~/assets/event-images/bogerd.svg'),
 					name: 'Bewust, Gezond & Alternatief Beurs',
 					text_1: '11.00 - 16.00 Druten.',
 					text_2: 'De Bogerd (Van Heemstraweg 53)',
 					href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
+				},
+				{
+					date: new Date(2024, 3, 14, 18),
+					img: require('~/assets/event-images/souls_logo.svg'),
+					name: 'Spirituele beurs Souls',
+					text_1: '10.00 - 17.00 Nijnsel.',
+					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
+					href: 'https://www.facebook.com/soulsspirituelebeurs',
 				},
 			],
 		}
