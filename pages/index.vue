@@ -138,7 +138,7 @@ v-container(fluid)
 				v-img.flex-md-grow-0(:src="require('~/assets/beurs.jpg')" eager)
 				p.mx-8.mt-8.small.focus De Beckart in Nijnsel
 				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Beurs Souls
-				p.mx-8.small.tertiary--text De derde versie van Spirituele Beurs Souls in de Beckart in Nijnsel is op zondag 14 april 2024 vanaf 10.00, entree kost slechts €3,-. Voor het laatste nieuws hou onze Facebook pagina in de gaten.
+				p.mx-8.small.tertiary--text De vierde versie van Spirituele Beurs Souls in de Beckart in Nijnsel is op zondag 14 april 2024 vanaf 10.00, entree kost slechts €3,-. Voor het laatste nieuws hou onze Facebook pagina in de gaten.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" target="_blank" outlined rounded nuxt href="https://www.facebook.com/soulsspirituelebeurs")
 					span.small Facebook Pagina
 					img.ml-3(src="~/assets/arrow-right.svg")

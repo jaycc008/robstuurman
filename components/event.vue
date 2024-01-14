@@ -1,7 +1,10 @@
 <template lang="pug">
 v-row.mb-1
 	v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="2" sm="1" height="108")
-		.d-flex.flex-column.align-center.justify-center
+		.d-flex.flex-column.align-center.justify-center.multiday(v-if="event.from_date")
+			span.day {{event.from_date}} - {{event.date.getDate()}}
+			span.month.sm-mt-1 {{getDutchMonth}}
+		.d-flex.flex-column.align-center.justify-center(v-else)
 			span.day {{event.date.getDate()}}
 			span.month {{getDutchMonth}}
 	v-col.d-none.d-md-flex.align-center.justify-center.lightpurple2(cols="2")
@@ -26,6 +29,15 @@ v-row.mb-1
 	font-size: 24px
 	line-height: 40px
 	padding-top: 10px
+
+.multiday .day
+	font-size: 16px
+	@media #{map-get($display-breakpoints, 'md-and-down')}
+		font-size: 11px
+		text-align: center
+		line-height: 20px
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		font-size: 20px
 
 .month
 	font-family: 'Poppins'
