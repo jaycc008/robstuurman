@@ -9,8 +9,8 @@ v-app(light)
 				v-container(fluid)
 					v-row.my-5
 						v-col(cols="12" md="3" order='1' order-mdAndUp='2')
-							a(href="https://catcollectief.nl/")
-								v-img.d-flex.mx-auto(:src="require('~/assets/cat_logo.svg')" max-width='200')
+							a(href="https://catcollectief.nl/" target="_blank")
+								v-img.d-flex.mx-auto(:src="require('~/assets/cat_logo.png')" max-width='200')
 						v-col(cols="11" md="4" order='2' order-mdAndUp='1')
 							.full-height.d-flex.flex-column.justify-center
 								.title2.mb-10 Zorg goed voor je zelf, neem gerust contact met me op

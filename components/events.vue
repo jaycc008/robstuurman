@@ -3,6 +3,7 @@
 	v-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			.h1 Beurzen kalender
+			span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
 	event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event")
 
 </template>
@@ -208,94 +209,79 @@ export default {
 				},
 			],
 			events: [
-				// {
-				// 	date: this.newDate(28, 1, 2024),
-				// 	img: require('~/assets/event-images/buitenlust.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Vught.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
-				// {
-				// 	date: this.newDate(25, 2, 2024),
-				// 	img: require('~/assets/event-images/buitenlust.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Vught.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
-				// {
-				// 	date: this.newDate(14, 3, 2024),
-				// 	img: require('~/assets/event-images/souls_logo.svg'),
-				// 	name: 'Spirituele beurs Souls',
-				// 	text_1: '10.00 - 17.00 Nijnsel.',
-				// 	text_2: 'De Beckart (Oude Lieshoutseweg 7)',
-				// 	href: 'https://www.facebook.com/soulsspirituelebeurs',
-				// },
-				// {
-				// 	date: this.newDate(17, 3, 2024),
-				// 	img: require('~/assets/event-images/heavenly-heart.svg'),
-				// 	name: 'Heavenly Heart',
-				// 	text_1: '11.00 - 17.00 Eindhoven.',
-				// 	text_2: 'Lievendaal (Lievendaalseweg 3)',
-				// 	href: 'https://www.heavenlyheart.nl/',
-				// },
-				// {
-				// 	date: this.newDate(31, 3, 2024),
-				// 	img: require('~/assets/event-images/buitenlust.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Vught.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
-				// {
-				// 	date: this.newDate(1, 4, 2024),
-				// 	img: require('~/assets/event-images/bogerd.svg'),
-				// 	name: 'Bewust, Gezond & Alternatief Beurs',
-				// 	text_1: '11.00 - 16.00 Druten.',
-				// 	text_2: 'De Bogerd (Van Heemstraweg 53)',
-				// 	href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
-				// },
-				// {
-				// 	date: this.newDate(7, 4, 2024),
-				// 	text_logo: 'Stichting Horus',
-				// 	name: 'Paranormale Beurs Horus',
-				// 	text_1: '11.00 - 17.00 Berlicum.',
-				// 	text_2: 'Den Durspherd (Kerkswijk 61)',
-				// 	href: 'https://www.facebook.com/stichtinghorus',
-				// },
-				// {
-				// 	date: this.newDate(28, 4, 2024),
-				// 	img: require('~/assets/event-images/buitenlust.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Vught.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
-				// {
-				// 	date: this.newDate(26, 5, 2024),
-				// 	img: require('~/assets/event-images/buitenlust.svg'),
-				// 	name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-				// 	text_1: '10.00 - 17.00 Vught.',
-				// 	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-				// 	href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				// },
-				// {
-				// 	date: this.newDate(1, 6, 2024),
-				// 	img: require('~/assets/event-images/bendefestijn.svg'),
-				// 	name: 'Bendefestijn',
-				// 	text_1: '11.00 - 22.00 Nieuwkuijk.',
-				// 	text_2: 'Abdij Mariënkroon (Abdijlaan 12)',
-				// 	href: 'https://www.facebook.com/events/324064563520480/?acontext=%7B%22event_action_history%22%3A[]%7D',
-				// },
-				// {
-				// 	date: this.newDate(2, 6, 2024),
-				// 	img: require('~/assets/event-images/ulingsheide.svg'),
-				// 	name: 'Spirituele Gezondheidsbeurs',
-				// 	text_1: '?? Tegelen.', // Moet nog!!!
-				// 	text_2: 'Abdij Ulingsheide (Ulingsheide 3)',
-				// 	href: 'https://www.facebook.com/events/324064563520480/?acontext=%7B%22event_action_history%22%3A[]%7D',
-				// },
+				{
+					date: this.newDate(17, 3, 2024),
+					img: require('~/assets/event-images/heavenly-heart.svg'),
+					name: 'Heavenly Heart',
+					text_1: '11.00 - 17.00 Eindhoven.',
+					text_2: 'Lievendaal (Lievendaalseweg 3)',
+					href: 'https://www.heavenlyheart.nl/',
+				},
+				{
+					date: this.newDate(14, 4, 2024),
+					img: require('~/assets/event-images/souls_logo.svg'),
+					name: 'Spirituele beurs Souls',
+					text_1: '10.00 - 17.00 Nijnsel.',
+					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
+					href: 'https://www.facebook.com/events/3700776286873436',
+				},
+				{
+					date: this.newDate(31, 3, 2024),
+					img: require('~/assets/event-images/buitenlust.svg'),
+					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
+					text_1: '10.00 - 17.00 Vught.',
+					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
+					href: 'https://www.buitenlustvught.nl/mediumdagen/',
+				},
+				{
+					date: this.newDate(1, 4, 2024),
+					img: require('~/assets/event-images/bogerd.svg'),
+					name: 'Bewust, Gezond & Alternatief Beurs',
+					text_1: '11.00 - 16.00 Druten.',
+					text_2: 'De Bogerd (Van Heemstraweg 53)',
+					href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
+				},
+				{
+					date: this.newDate(7, 4, 2024),
+					text_logo: 'Stichting Horus',
+					name: 'Paranormale Beurs Horus',
+					text_1: '11.00 - 17.00 Berlicum.',
+					text_2: 'Den Durspherd (Kerkswijk 61)',
+					href: 'https://www.facebook.com/stichtinghorus',
+				},
+				{
+					date: this.newDate(28, 4, 2024),
+					img: require('~/assets/event-images/buitenlust.svg'),
+					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
+					text_1: '10.00 - 17.00 Vught.',
+					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
+					href: 'https://www.buitenlustvught.nl/mediumdagen/',
+				},
+				{
+					date: this.newDate(26, 5, 2024),
+					img: require('~/assets/event-images/buitenlust.svg'),
+					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
+					text_1: '10.00 - 17.00 Vught.',
+					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
+					href: 'https://www.buitenlustvught.nl/mediumdagen/',
+				},
+				{
+					from_date: 1,
+					date: this.newDate(2, 6, 2024),
+					img: require('~/assets/event-images/bendefestijn.svg'),
+					name: 'Bendefestijn',
+					text_1: '11.00 - 22.00 Nieuwkuijk.',
+					text_2: 'Abdij Mariënkroon (Abdijlaan 12)',
+					href: 'https://www.facebook.com/events/324064563520480/?acontext=%7B%22event_action_history%22%3A[]%7D',
+				},
+				{
+					date: this.newDate(2, 6, 2024),
+					img: require('~/assets/event-images/ulingsheide.svg'),
+					name: 'Spirituele Gezondheidsbeurs',
+					text_1: '10.00 - 18.00 Tegelen.', // Moet nog!!!
+					text_2: 'Abdij Ulingsheide (Ulingsheide 3)',
+					href: 'https://www.facebook.com/events/324064563520480/?acontext=%7B%22event_action_history%22%3A[]%7D',
+				},
 				{
 					date: this.newDate(23, 6, 2024),
 					img: require('~/assets/event-images/heavenly-heart.svg'),
@@ -347,22 +333,6 @@ export default {
 				},
 				{
 					date: this.newDate(27, 10, 2024),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(24, 11, 2024),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(29, 12, 2024),
 					img: require('~/assets/event-images/buitenlust.svg'),
 					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
 					text_1: '10.00 - 17.00 Vught.',
