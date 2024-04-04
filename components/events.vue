@@ -207,24 +207,6 @@ export default {
 					text_2: 'Bibliotheek Oostland (Wilhelminastraat 1A)',
 					href: 'https://www.facebook.com/groups/571813376237192/permalink/6933955503356249/',
 				},
-			],
-			events: [
-				{
-					date: this.newDate(17, 3, 2024),
-					img: require('~/assets/event-images/heavenly-heart.svg'),
-					name: 'Heavenly Heart',
-					text_1: '11.00 - 17.00 Eindhoven.',
-					text_2: 'Lievendaal (Lievendaalseweg 3)',
-					href: 'https://www.heavenlyheart.nl/',
-				},
-				{
-					date: this.newDate(14, 4, 2024),
-					img: require('~/assets/event-images/souls_logo.svg'),
-					name: 'Spirituele beurs Souls',
-					text_1: '10.00 - 17.00 Nijnsel.',
-					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
-					href: 'https://www.facebook.com/events/3700776286873436',
-				},
 				{
 					date: this.newDate(31, 3, 2024),
 					img: require('~/assets/event-images/buitenlust.svg'),
@@ -234,12 +216,30 @@ export default {
 					href: 'https://www.buitenlustvught.nl/mediumdagen/',
 				},
 				{
+					date: this.newDate(17, 3, 2024),
+					img: require('~/assets/event-images/heavenly-heart.svg'),
+					name: 'Heavenly Heart',
+					text_1: '11.00 - 17.00 Eindhoven.',
+					text_2: 'Lievendaal (Lievendaalseweg 3)',
+					href: 'https://www.heavenlyheart.nl/',
+				},
+				{
 					date: this.newDate(1, 4, 2024),
 					img: require('~/assets/event-images/bogerd.svg'),
 					name: 'Bewust, Gezond & Alternatief Beurs',
 					text_1: '11.00 - 16.00 Druten.',
 					text_2: 'De Bogerd (Van Heemstraweg 53)',
 					href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
+				},
+			],
+			events: [
+				{
+					date: this.newDate(14, 4, 2024),
+					img: require('~/assets/event-images/souls_logo.svg'),
+					name: 'Spirituele beurs Souls',
+					text_1: '10.00 - 17.00 Nijnsel.',
+					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
+					href: 'https://www.facebook.com/events/3700776286873436',
 				},
 				{
 					date: this.newDate(7, 4, 2024),
