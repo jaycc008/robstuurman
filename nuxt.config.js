@@ -14,6 +14,7 @@ export default {
 			{ hid: 'description', name: 'description', content: '' },
 			{ name: 'msapplication-TileColor', content: '#00aba9' },
 			{ name: 'theme-color', content: '#ffffff' },
+			{ cache: false },
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
