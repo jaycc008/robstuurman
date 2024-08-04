@@ -3,7 +3,7 @@
 	v-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			.h1 Beurzen kalender
-			span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
+			//- span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
 	event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event")
 
 </template>
