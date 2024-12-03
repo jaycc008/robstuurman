@@ -9,8 +9,6 @@ v-app(light)
 				v-container(fluid)
 					v-row.my-5
 						v-col(cols="12" md="3" order='1' order-mdAndUp='2')
-							a(href="https://catcollectief.nl/" target="_blank")
-								v-img.d-flex.mx-auto(:src="require('~/assets/cat_logo.png')" max-width='200')
 						v-col(cols="11" md="4" order='2' order-mdAndUp='1')
 							.full-height.d-flex.flex-column.justify-center
 								.title2.mb-10 Zorg goed voor je zelf, neem gerust contact met me op
@@ -39,7 +37,7 @@ v-app(light)
 							v-list-item-title.small
 								| {{credit.text}}
 								a.secondary--text.text-decoration-underline(:href="credit.href" target="_blank")  {{credit.linktext}}
-				.mr-6.small 2023 © Rob Stuurman
+				.mr-6.small 2024 © Rob Stuurman
 </template>
 
 <script>
