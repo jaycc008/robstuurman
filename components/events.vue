@@ -24,11 +24,19 @@ export default {
 					href: 'https://www.facebook.com/stichtinghorus',
 				},
 				{
+					date: this.newDate(30, 3, 2025),
+					img: require('~/assets/event-images/buitenlust.svg'),
+					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
+					text_1: '10.00 - 17.00 Vught.',
+					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
+					href: 'https://www.buitenlustvught.nl/mediumdagen/',
+				},
+				{
 					date: this.newDate(6, 4, 2025),
 					img: this.requireImg('haammaeker'),
 					name: 'Spirituele Beurs',
-					text_1: '11.00 - 17.00 Nijnsel.',
-					text_2: 'Gemeensschapshuis D’n Haammaeker (Hoogstraat 2, Neer)',
+					text_1: '11.00 - 17.00 Neer.',
+					text_2: 'Gemeensschapshuis D’n Haammaeker (Hoogstraat 2)',
 					href: 'https://haammaeker.nl/save-the-date-spirituele-beurs/',
 				},
 				{
