@@ -56,6 +56,7 @@ export default {
 				},
 				{
 					date: this.newDate(24, 5, 2025),
+					text_logo: 'Vanuit Verbinding',
 					name: 'Vanuit Verbinding Volkel',
 					text_1: '11.00 - 17.00 Volkel.',
 					text_2: 'KC Uden (Zeelandsedijk 18)',
