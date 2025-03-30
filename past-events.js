@@ -216,7 +216,7 @@ pastEvents: [
     	text_2: 'De Bogerd (Van Heemstraweg 53)',
     	href: 'https://www.facebook.com/photo/?fbid=6206063586166638&set=a.458472610925793', // https://bogerddruten.nl/
     },
-    }
+	{
     	date: this.newDate(14, 4, 2024),
     	img: require('~/assets/event-images/souls_logo.svg'),
     	name: 'Spirituele beurs Souls',
@@ -338,4 +338,20 @@ pastEvents: [
     	text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
     	href: 'https://www.buitenlustvught.nl/mediumdagen/',
     },
+	{
+		date: this.newDate(16, 3, 2025),
+		img: this.requireImg('horus'),
+		name: 'Paranormale Beurs Horus',
+		text_1: '11.00 - 17.00 Berlicum.',
+		text_2: 'Den Durpsherd (Kerkswijk 61)',
+		href: 'https://www.facebook.com/stichtinghorus',
+	},
+	{
+		date: this.newDate(30, 3, 2025),
+		img: require('~/assets/event-images/buitenlust.svg'),
+		name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
+		text_1: '10.00 - 17.00 Vught.',
+		text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
+		href: 'https://www.buitenlustvught.nl/mediumdagen/',
+	},
 ]
