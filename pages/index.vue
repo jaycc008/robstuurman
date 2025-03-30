@@ -25,9 +25,9 @@ v-container(fluid)
 				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-				v-btn.mt-2.px-6.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="#contact")
+				v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="#contact")
 					span Neem contact op
-					img.ml-6(src="~/assets/arrow-down.svg")
+					img.ml-3(src="~/assets/arrow-down.svg")
 
 
 	v-row.mt-16
@@ -123,7 +123,7 @@ v-container(fluid)
 				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt rel="nofollow" href="mailto:rob.stuurman@hotmail.com")
 					span.small Stuur een mail
-					img.ml-3(src="~/assets/arrow-right.svg")
+					img.ml-4(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
 				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.jpg')" eager)
@@ -132,7 +132,7 @@ v-container(fluid)
 				p.mx-8.small.tertiary--text Energie is overal om ons heen en reiki is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren; Het is een universele liefdes energie die ik door mag geven.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
 					span.small Stuur een mail
-					img.ml-3(src="~/assets/arrow-right.svg")
+					img.ml-4(src="~/assets/arrow-right.svg")
 		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
 			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
 				v-img.flex-md-grow-0(:src="require('~/assets/beurs.jpg')" eager)
@@ -141,7 +141,7 @@ v-container(fluid)
 				p.mx-8.small.tertiary--text De Spirituele Beurs Souls in de Beckart in Nijnsel zijn op zondag 13 april en zondag 19 oktober 2025 vanaf 10.00, entree kost slechts €3,-. Voor het laatste nieuws hou onze Facebook pagina in de gaten.
 				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" target="_blank" outlined rounded nuxt href="https://www.facebook.com/soulsspirituelebeurs")
 					span.small Facebook Pagina
-					img.ml-3(src="~/assets/arrow-right.svg")
+					img.ml-4(src="~/assets/arrow-right.svg")
 </template>
 
 <style lang="sass">
