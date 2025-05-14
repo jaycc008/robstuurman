@@ -23,38 +23,6 @@ export default {
 		return {
 			events: [
 				{
-					date: this.newDate(6, 4, 2025),
-					img: this.requireImg('haammaeker'),
-					name: 'Spirituele Beurs',
-					text_1: '11.00 - 17.00 Neer.',
-					text_2: 'Gemeensschapshuis D’n Haammaeker (Hoogstraat 2)',
-					href: 'https://haammaeker.nl/save-the-date-spirituele-beurs/',
-				},
-				{
-					date: this.newDate(13, 4, 2025),
-					img: this.requireImg('souls_logo'),
-					name: 'Spirituele beurs Souls',
-					text_1: '10.00 - 17.00 Nijnsel.',
-					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
-					href: 'https://www.facebook.com/soulsspirituelebeurs',
-				},
-				{
-					date: this.newDate(21, 4, 2025),
-					img: require('~/assets/event-images/bogerd.svg'),
-					name: 'Bewust, Gezond & Alternatief Beurs',
-					text_1: '11.00 - 17.00 Druten.',
-					text_2: 'De Bogerd (Van Heemstraweg 53)',
-					href: 'https://www.facebook.com/events/544328485072431/', // https://bogerddruten.nl/
-				},
-				{
-					date: this.newDate(27, 4, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
 					date: this.newDate(24, 5, 2025),
 					text_logo: 'Vanuit Verbinding',
 					name: 'Vanuit Verbinding Volkel',
