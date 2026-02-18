@@ -4,7 +4,8 @@
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			.h1 Beurzen kalender
 			//- span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
-	event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event" v-if="showAll ? ()=>{} : index < 3")
+	client-only
+		event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event" v-if="showAll ? ()=>{} : index < 3")
 	v-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt @click="showAll = !showAll")
@@ -23,113 +24,53 @@ export default {
 		return {
 			events: [
 				{
-					date: this.newDate(24, 5, 2025),
-					text_logo: 'Vanuit Verbinding',
-					name: 'Vanuit Verbinding Volkel',
-					text_1: '11.00 - 17.00 Volkel.',
-					text_2: 'KC Uden (Zeelandsedijk 18)',
-					href: 'https://www.facebook.com/events/549075674147762',
+					date: this.newDate(15, 3, 2026),
+					img: require('~/assets/event-images/horus.svg'),
+					name: 'Horus Paranormale Beurs',
+					text_1: '11.00 - 17.00 Berlicum.',
+					text_2: 'D\'n Durpsherd (Kerkswijk 61)',
+					href: 'https://www.facebook.com/events/1601840687921949/',
 				},
 				{
-					date: this.newDate(25, 5, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
+					date: this.newDate(22, 3, 2026),
+					img: require('~/assets/event-images/chapat_bewustzijn.svg'),
+					name: 'Chapat Bewustzijnsbeurs',
+					text_1: '10.00 - 17.00 Bergeijk.',
+					text_2: 'Buurthuis Samen \'t Loo (Terlostraat 7)',
+					href: 'https://hipsy.nl/event/186323-chapat-bewustzijns-beurs',
 				},
 				{
-					date: this.newDate(22, 6, 2025),
-					img: require('~/assets/event-images/zielsgelukkig.svg'),
-					name: 'Zielsgelukkig Spirituele beurs',
-					text_1: '11.00 - 17.00 Berg en Dal.',
-					text_2: 'Fletcher Erica (Molenbosweg 17)',
-					href: 'https://zielsgelukkigverbinding.nl/',
-				},
-				{
-					from_date: 26,
-					date: this.newDate(29, 6, 2025),
-					text_logo: 'Chapat',
-					name: 'Chapat Sjamanistisch Festival',
-					text_1: '10.00 - 17.00 Reusel.',
-					text_2: 'Terrein de Wilgenspot (Langemiersedijk)',
-					href: 'https://www.facebook.com/ChapatSjamanistischFestival',
-				},
-				{
-					date: this.newDate(13, 7, 2025),
-					text_logo: 'Aisa',
-					name: 'Aisa',
-					text_1: '11.00 - 17.00 Den Bosch.',
-					text_2: 'Sociaal Cultureel Centrum (De Helftheuvelpassage 115)',
-					href: 'https://powermindbalance.nl/acties/',
-				},
-				{
-					date: this.newDate(27, 7, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(3, 8, 2025),
-					img: require('~/assets/event-images/zielsgelukkig.svg'),
-					name: 'Zielsgelukkig Spirituele beurs',
-					text_1: '11.00 - 17.00 Baarlo.',
-					text_2: 'Fletcher Chateau de Raaij (Raayerveldlaan 6)',
-					href: 'https://zielsgelukkigverbinding.nl/',
-				},
-				{
-					date: this.newDate(23, 8, 2025),
-    				text_logo: 'Nieuwe Maan',
-					name: 'Nieuwe Maan Drumcirkel',
-					text_1: '13.00 - 17.00 Valkenswaard.',
-					text_2: 'Het Paardenparadijs (Maastrichterweg 96)',
-					href: 'https://www.facebook.com/StichtingAtlantica',
-				},
-				{
-					date: this.newDate(24, 8, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(28, 9, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(19, 10, 2025),
-					img: this.requireImg('souls_logo'),
-					name: 'Spirituele beurs Souls',
+					date: this.newDate(12, 4, 2026),
+					img: require('~/assets/event-images/souls_logo.svg'),
+					name: 'Spirituele Beurs Souls',
 					text_1: '10.00 - 17.00 Nijnsel.',
-					text_2: 'De Beckart (Oude Lieshoutseweg 7)',
+					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
 					href: 'https://www.facebook.com/soulsspirituelebeurs',
 				},
 				{
-					date: this.newDate(26, 10, 2025),
-					img: require('~/assets/event-images/buitenlust.svg'),
-					name: 'Maandelijkse mediumdagen (elke laatste zondag vd maand)',
-					text_1: '10.00 - 17.00 Vught.',
-					text_2: 'Koffie en Theetuin Buitenlust (Esscheweg 274A)',
-					href: 'https://www.buitenlustvught.nl/mediumdagen/',
-				},
-				{
-					date: this.newDate(14, 12, 2025),
-					text_logo: 'Aisa',
+					date: this.newDate(26, 4, 2026),
+					img: require('~/assets/event-images/aisa.svg'),
 					name: 'Aisa',
 					text_1: '11.00 - 17.00 Den Bosch.',
 					text_2: 'Sociaal Cultureel Centrum (De Helftheuvelpassage 115)',
 					href: 'https://powermindbalance.nl/acties/',
 				},
+				{
+					from_date: 26,
+					date: this.newDate(28, 6, 2026),
+					img: require('~/assets/event-images/chapat.svg'),
+					name: 'Chapat Sjamanistisch Festival',
+					text_1: 'Reusel.',
+					text_2: 'De Wilgenspot (Lage Mierdsedijk)',
+					href: 'https://www.chapatsjamanistischfestival.com/',
+				},
 			],
-			showAll: false
+			showAll: false,
+			now: 0
 		}
+	},
+	mounted() {
+		this.now = Date.now()
 	},
 	computed: {
 		sortedEvents() {
@@ -138,8 +79,11 @@ export default {
 			return sorted
 		},
 		upcomingEvents() {
+			if (!this.now) {
+				return this.sortedEvents
+			}
 			const filteredEvents = this.sortedEvents.filter(
-				(event) => event.date > Date.now()
+				(event) => event.date > this.now
 			)
 
 			return filteredEvents
