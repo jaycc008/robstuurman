@@ -8,11 +8,11 @@ v-container(fluid)
 				span.focus  Argoem
 				|  en kosmische naam 
 				span.focus  Loor
-		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5.pb-md-15(cols="12" md="4" sm="10")
-			img.d-none.d-md-block(src="~/assets/zen.png")
+		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5(cols="12" md="4" sm="10")
+			img.hero-image.d-none.d-md-block(src="~/assets/zen.png")
 			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
 
-	events.pt-4.mt-16.mb-2
+	events.pt-4.mt-4.mb-2
 
 	v-row.full-width.float-left.mt-16.mb-md-16.mb-sm-8#podcast
 		v-col.offset-sm-2.offset-md-1.d-flex.align-center(cols="12" sm="8" md="5" xl="4" style="position:relative;")
@@ -25,19 +25,16 @@ v-container(fluid)
 				p &ldquo;Ik laat ze vanuit hun hoofd naar hun hart gaan om contact te maken met zichzelf, hun innerlijke ik.&rdquo;
 
 	v-row.float-left.mb-5#about.offset-anchor
-		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")
+		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="3")
 			.about-picture
 				v-img.image-shadow(:src="require('~/assets/rob_portrait.jpeg')" width="100%")
-		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="6" lg="5")
+		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="7" lg="6")
 			.about-me
 				h1 Over Rob Stuurman
 				.title2.mb-6 Ik stel me graag even voor
 				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-				v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="#contact")
-					span Neem contact op
-					img.ml-3(src="~/assets/arrow-down.svg")
 
 
 	v-row.float-left#treatments.offset-anchor
@@ -116,39 +113,64 @@ v-container(fluid)
 
 	v-row.full-width.float-left#themes.offset-anchor
 		v-col.offset-sm-1(cols="12" sm="10" md="8")
-			h1 Thema avonden
-			.title2 Naast energetisch genezen bieden we ook verschillende thema avonden met andere behandelaars aan.
+			h1 Belevenisdag
+			.title2 Kom een middag ervaren. Mediteer in een merkaba, maak gebruik van het medicijnwiel, kom tot rust in de lemniscaat, of geniet van een behandeling binnen in de boerderij.
 	v-row.float-left.mb-11
-		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/infraroodtafel.jpg')" eager)
-				p.mx-8.mt-8.small.focus Energetisch Genezer Rob
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood behandeling
-				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt rel="nofollow" href="mailto:rob.stuurman@hotmail.com")
-					span.small Stuur een mail
-					img.ml-4(src="~/assets/arrow-right.svg")
-		v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.jpg')" eager)
-				p.mx-8.mt-8.small.focus Reiki Master Lya
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Reiki Behandeling
-				p.mx-8.small.tertiary--text Energie is overal om ons heen en reiki is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren; Het is een universele liefdes energie die ik door mag geven.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
-					span.small Stuur een mail
-					img.ml-4(src="~/assets/arrow-right.svg")
-		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/beurs.jpg')" eager)
-				p.mx-8.mt-8.small.focus De Beckart in Nijnsel
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Beurs Souls
-				p.mx-8.small.tertiary--text De Spirituele Beurs Souls in de Beckart in Nijnsel is op zondag 18 oktober 2026 vanaf 10.00, entree kost slechts €3,-. Check voor het laatste nieuws onze Facebook pagina.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" target="_blank" outlined rounded nuxt href="https://www.facebook.com/soulsspirituelebeurs")
-					span.small Facebook Pagina
-					img.ml-4(src="~/assets/arrow-right.svg")
+		v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="12" lg="10")
+			v-row
+				v-col(v-for="(item, index) in experiences" :key="index" cols="12" sm="6" md="4")
+					v-card.rounded-lg.full-height.d-flex.flex-column.pa-8(color="skin" flat)
+						p.small.focus {{ item.top }}
+						h2.tertiary--text.mb-2 {{ item.title }}
+						p.small.tertiary--text {{ item.text }}
 </template>
 
+<script>
+export default {
+	data() {
+		return {
+			experiences: [
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Merkaba',
+					text: 'Zitten in de Merkaba om te mediteren, de energie door je heen te laten stromen en je uit te lijnen. Het geeft energetische bescherming en helpt spiritueel te groeien. De geometrie heeft een rechtstreekse verbinding met onze schepping en de bron van liefde.',
+				},
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Medicijnwiel',
+					text: 'In het medicijnwiel kan je een plaats zoeken die je aanspreekt. En als er ceremonies uitgevoerd worden op alle 4 windrichtingen, kunnen we verschuivingen creëren. Voor jezelf kan je een vraag stellen en dan gaan waarnemen en voelen, ook kan er n.a.v. een kaartje een plaats gezocht worden in de cirkel.',
+				},
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Lemniscaat',
+					text: 'Stel jezelf de vraag waar je duidelijkheid in wil en ga lopen. Je kan ook een kaart trekken uit het lemniscaat loopspel en daar al lopend over denken en voelen. Het lopen van de lemniscaat haalt je uit je denken en laat je gaan naar waarnemen en voelen.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Piramide, Genesa en pentasfeer',
+					text: 'Ervaar de energie van de piramide, of ga onder de genesa en pentasfeer bollen liggen. De bollen zitten op de hoogte van de chakra\'s.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Urim stoel of Bron-code stoel',
+					text: 'Maak vrij gebruik van de Urim stoel voor ontspanning. De Bron-code stoel is onder begeleiding bij te boeken.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Infrarood massagetafel',
+					text: 'De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.',
+				},
+			],
+		}
+	},
+}
+</script>
+
 <style lang="sass">
+.hero-image
+	max-width: 80%
+	height: auto
+
 .offset-anchor
 	padding-top: 180px
 	margin-top: -180px !important

@@ -5,8 +5,8 @@
 			.h1 Beurzen kalender
 			//- span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
 	client-only
-		event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event" v-if="showAll ? ()=>{} : index < 3")
-	v-row
+		event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event" v-if="showAll || index < 3")
+	v-row(v-if="upcomingEvents.length > 3")
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt @click="showAll = !showAll")
 				span(v-if="!showAll") Bekijk alle beurzen

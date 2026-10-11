@@ -1,5 +1,5 @@
 <template lang="pug">
-v-row.mb-1
+v-row.event-row.py-2
 	v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="2" sm="1" height="108")
 		.d-flex.flex-column.align-center.justify-center.multiday(v-if="event.from_date")
 			span.day {{event.from_date}} - {{event.date.getDate()}}
@@ -23,6 +23,9 @@ v-row.mb-1
 </template>
 
 <style lang="sass">
+.event-row + .event-row
+	border-top: 1px solid var(--v-lightpurple-base)
+
 .day
 	font-family: 'Poppins'
 	font-weight: 700

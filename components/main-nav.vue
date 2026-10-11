@@ -108,9 +108,9 @@ export default {
 		return {
 			menuItems: [
 				{ href: '#home', text: 'Home' },
-				{ href: '#about', text: 'Over' },
+				{ href: '#about', text: 'Over Rob' },
 				{ href: '#treatments', text: 'Behandelingen' },
-				{ href: '#themes', text: 'Thema avonden' },
+				{ href: '#themes', text: 'Belevenismiddag' },
 				{ href: '#contact', text: 'Contact' },
 			],
 			overlay: false,
