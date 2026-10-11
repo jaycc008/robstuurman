@@ -14,7 +14,7 @@ v-container(fluid)
 
 	events.pt-4.mt-4.mb-2
 
-	v-row.full-width.float-left.mt-16.mb-md-16.mb-sm-8#podcast
+	v-row.full-width.float-left.mt-4.mb-md-16.mb-sm-8#podcast
 		v-col.offset-sm-2.offset-md-1.d-flex.align-center(cols="12" sm="8" md="5" xl="4" style="position:relative;")
 			.purple-background.purple-background--left
 			yt-video.full-width
