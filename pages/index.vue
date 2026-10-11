@@ -22,10 +22,7 @@ v-container(fluid)
 			.podcast-text
 				h1 Podcast
 				.title2.mb-6 Interview bij Zelfwerkzaamheid
-				p.mb-8 &ldquo;Ik laat ze vanuit hun hoofd naar hun hart gaan om contact te maken met zichzelf, hun innerlijke ik.&rdquo;
-				v-btn.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ajr9DBjItEQ")
-					span Bekijk het interview
-					img.ml-4(src="~/assets/arrow-right.svg")
+				p &ldquo;Ik laat ze vanuit hun hoofd naar hun hart gaan om contact te maken met zichzelf, hun innerlijke ik.&rdquo;
 
 	v-row.float-left.mb-5#about.offset-anchor
 		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")
