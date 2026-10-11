@@ -31,7 +31,7 @@ component.event-card.big-shadow.rounded-lg.d-flex.flex-column.white(:class="{ 'e
 
 .event-card__image
 	flex: 1 1 auto
-	min-height: 220px
+	min-height: 150px
 	background-size: cover
 	background-position: center
 

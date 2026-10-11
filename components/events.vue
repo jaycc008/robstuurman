@@ -37,8 +37,9 @@ export default {
 				{
 					date: this.newDate(14, 3, 2027),
 					name: 'Horus Paranormale Beurs',
-					text_1: '10:30 - 17:00 Someren-Eind',
-					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
+					text_1: '11:00 - 17:00 Berlicum',
+					text_2: 'D\'n Durpsherd (Kerkswijk 61)',
+					href: 'https://stichtinghorus.nl/',
 				},
 				{
 					date: this.newDate(18, 4, 2027),
