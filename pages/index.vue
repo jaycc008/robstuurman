@@ -113,7 +113,7 @@ v-container(fluid)
 	v-row.float-left.reiki-row.mb-md-16#reiki
 		v-col.offset-sm-1.offset-md-1(cols="12" sm="10" md="3" order="2" order-md="1")
 			.about-picture.reiki-picture
-				v-img.image-shadow(:src="require('~/assets/theme-2.jpg')" width="100%")
+				v-img.image-shadow(:src="require('~/assets/theme-2.jpg')" width="100%" :aspect-ratio="1")
 		v-col.offset-sm-1.d-flex.pt-2.pt-md-5(cols="12" sm="10" md="7" lg="6" order="1" order-md="2")
 			.about-me
 				h1 Reiki behandeling

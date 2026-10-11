@@ -36,7 +36,7 @@ v-app(light)
 							v-list-item-title.small
 								| {{credit.text}}
 								a.secondary--text.text-decoration-underline(:href="credit.href" target="_blank")  {{credit.linktext}}
-				.small 2024 © Rob Stuurman
+				.small 2026 © Rob Stuurman
 </template>
 
 <script>
