@@ -2,7 +2,7 @@
 component.event-card.big-shadow.rounded-lg.d-flex.flex-column.white(:class="{ 'event-card--featured': featured }" :is="event.href ? 'a' : 'div'" :href="event.href" :target="event.href ? '_blank' : null" :rel="event.href ? 'noopener' : null")
 	.event-card__image(v-if="featured && event.img" :style="{ backgroundImage: 'url(' + event.img + ')' }" role="img" :aria-label="event.name")
 	.event-card__body.d-flex.align-start.pa-5
-		.event-card__date.d-flex.flex-column.align-center.mr-5
+		.event-card__date.d-flex.flex-column.align-center.justify-center.align-self-stretch.mr-5
 			span.day(v-if="event.from_date") {{ event.from_date }}-{{ event.date.getDate() }}
 			span.day(v-else) {{ event.date.getDate() }}
 			span.month {{ getDutchMonth }}
