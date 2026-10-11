@@ -28,7 +28,7 @@ export default {
 				{
 					date: this.newDate(18, 10, 2026),
 					featured: true,
-					img: require('~/assets/beurs.jpg'),
+					img: require('~/assets/souls-beurs.jpg'),
 					name: 'Souls Spirituele beurs',
 					text_1: '10:00 - 17:00 Nijnsel',
 					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
@@ -44,7 +44,7 @@ export default {
 				{
 					date: this.newDate(18, 4, 2027),
 					featured: true,
-					img: require('~/assets/beurs.jpg'),
+					img: require('~/assets/souls-beurs.jpg'),
 					name: 'Souls Spirituele beurs',
 					text_1: '10:00 - 17:00 Nijnsel',
 					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
