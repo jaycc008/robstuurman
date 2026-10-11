@@ -119,10 +119,12 @@ v-container(fluid)
 		v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="12" lg="10")
 			v-row
 				v-col(v-for="(item, index) in experiences" :key="index" cols="12" sm="6" md="4")
-					v-card.rounded-lg.full-height.d-flex.flex-column.pa-8(color="skin" flat)
-						p.small.focus {{ item.top }}
-						h2.tertiary--text.mb-2 {{ item.title }}
-						p.small.tertiary--text {{ item.text }}
+					v-card.rounded-lg.full-height.d-flex.flex-column(color="skin" flat)
+						v-img.flex-grow-0(:src="item.img" :aspect-ratio="1.6" eager)
+						.pa-8
+							p.small.focus {{ item.top }}
+							h2.tertiary--text.mb-2 {{ item.title }}
+							p.small.tertiary--text {{ item.text }}
 </template>
 
 <script>
@@ -133,31 +135,37 @@ export default {
 				{
 					top: 'Belevenismiddag buiten',
 					title: 'Merkaba',
+					img: require('~/assets/experience-images/merkaba.jpg'),
 					text: 'Zitten in de Merkaba om te mediteren, de energie door je heen te laten stromen en je uit te lijnen. Het geeft energetische bescherming en helpt spiritueel te groeien. De geometrie heeft een rechtstreekse verbinding met onze schepping en de bron van liefde.',
 				},
 				{
 					top: 'Belevenismiddag buiten',
 					title: 'Medicijnwiel',
+					img: require('~/assets/experience-images/medicijnwiel.jpg'),
 					text: 'In het medicijnwiel kan je een plaats zoeken die je aanspreekt. En als er ceremonies uitgevoerd worden op alle 4 windrichtingen, kunnen we verschuivingen creëren. Voor jezelf kan je een vraag stellen en dan gaan waarnemen en voelen, ook kan er n.a.v. een kaartje een plaats gezocht worden in de cirkel.',
 				},
 				{
 					top: 'Belevenismiddag buiten',
 					title: 'Lemniscaat',
+					img: require('~/assets/experience-images/lemniscaat.jpg'),
 					text: 'Stel jezelf de vraag waar je duidelijkheid in wil en ga lopen. Je kan ook een kaart trekken uit het lemniscaat loopspel en daar al lopend over denken en voelen. Het lopen van de lemniscaat haalt je uit je denken en laat je gaan naar waarnemen en voelen.',
 				},
 				{
 					top: 'Belevenismiddag binnen',
 					title: 'Piramide, Genesa en pentasfeer',
+					img: require('~/assets/experience-images/genesa.jpg'),
 					text: 'Ervaar de energie van de piramide, of ga onder de genesa en pentasfeer bollen liggen. De bollen zitten op de hoogte van de chakra\'s.',
 				},
 				{
 					top: 'Belevenismiddag binnen',
 					title: 'Urim stoel of Bron-code stoel',
+					img: require('~/assets/experience-images/urim.jpg'),
 					text: 'Maak vrij gebruik van de Urim stoel voor ontspanning. De Bron-code stoel is onder begeleiding bij te boeken.',
 				},
 				{
 					top: 'Belevenismiddag binnen',
 					title: 'Infrarood massagetafel',
+					img: require('~/assets/experience-images/infrarood.jpg'),
 					text: 'De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.',
 				},
 			],
