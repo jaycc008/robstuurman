@@ -110,12 +110,12 @@ v-container(fluid)
 		v-col.offset-sm-1(cols="12" sm="10")
 			p.mb-0.mb-md-4 Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
 
-	v-row.full-width.float-left.reiki-row.mb-md-16#reiki
-		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="1")
-			.purple-background.purple-background--left
-			v-img(:src="require('~/assets/theme-2.jpg')")
-		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1.pt-2.pt-md-5(cols="12" sm="10" md="6" lg="5" order="1" order-md="2")
-			.podcast-text
+	v-row.float-left.reiki-row.mb-md-16#reiki
+		v-col.offset-sm-1.offset-md-1(cols="12" sm="10" md="3" order="2" order-md="1")
+			.about-picture.reiki-picture
+				v-img.image-shadow(:src="require('~/assets/theme-2.jpg')" width="100%")
+		v-col.offset-sm-1.d-flex.pt-2.pt-md-5(cols="12" sm="10" md="7" lg="6" order="1" order-md="2")
+			.about-me
 				h1 Reiki behandeling
 				.title2.mb-8 Maak kennis met Reiki
 				p Je kunt (ook) een reiki behandeling boeken bij Lya. Energie is overal om ons heen en
@@ -274,6 +274,8 @@ export default {
 		margin-bottom: -12px !important
 	.reiki-row
 		margin-bottom: 38px !important
+	.reiki-picture
+		margin-top: 32px
 
 .belevenisdag-row
 	margin-bottom: 44px !important
