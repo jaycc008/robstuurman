@@ -21,7 +21,7 @@ v-app(light)
 										a.address-line(href="tel:+31613156955" rel="nofollow") 06 13156955
 									li.d-inline-flex.address-list-item
 										v-img.mr-4.flex-grow-0(:src="require('~/assets/gps.svg')" height="40" width="40")
-										a.address-line(href="https://goo.gl/maps/ypBniShYGVxh2tYJ7" rel="nofollow" target="_blank") Lupinestraat 15, 5492KD, Sint-Oedenrode
+										a.address-line(href="https://maps.app.goo.gl/nabQnSkFU4SsvGE79" rel="nofollow" target="_blank") Bezoekadres: Brouwerskampweg 21, 5691 PN, Son
 									li.d-inline-flex.address-list-item
 										v-img.mr-4.flex-grow-0(:src="require('~/assets/event-images/souls_logo.svg')" height="40" width="40")
 										a.address-line(href="https://www.facebook.com/soulsspirituelebeurs" rel="nofollow" target="_blank") Souls Spirituele Beurs
