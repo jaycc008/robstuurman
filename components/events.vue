@@ -3,16 +3,12 @@
 	v-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1
 			.h1 Beurzen kalender
-			//- span.focus Let op: De Souls Beurs is 14 april, op de website stond tot voor kort een incorrecte datum.
 	client-only
-		event(v-for="(event, index) in upcomingEvents" :key="index" v-bind:event="event" v-if="showAll || index < 3")
-	v-row(v-if="upcomingEvents.length > 3")
-		v-col.offset-sm-1.offset-md-0.offset-lg-1
-			v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt @click="showAll = !showAll")
-				span(v-if="!showAll") Bekijk alle beurzen
-				img.ml-3(src="~/assets/arrow-down.svg" v-if="!showAll")
-				span(v-if="showAll") Bekijk minder
-				img.ml-3(src="~/assets/arrow-up.svg" v-if="showAll")
+		v-row
+			v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="6" lg="5" v-if="featuredEvent")
+				event(:event="featuredEvent" featured)
+			v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="6" lg="5" v-if="otherEvents.length")
+				event(v-for="(event, index) in otherEvents" :key="index" :event="event")
 
 </template>
 
@@ -24,66 +20,70 @@ export default {
 		return {
 			events: [
 				{
-					img: require('~/assets/event-images/souls_logo.svg'),
-					name: 'Spirituele Beurs Souls',
-					text_1: '10.00 - 17.00 Nijnsel.',
-					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
-					href: 'https://www.facebook.com/soulsspirituelebeurs',
-				},
-				{
 					date: this.newDate(4, 10, 2026),
-					img: require('~/assets/event-images/chapat.svg'),
 					name: 'Chapat Bewustzijnsbeurs',
-					text_1: '10.00 - 17.00 Bergeijk.',
+					text_1: '10:00 - 17:00 Bergeijk',
 					text_2: 'Buurthuis Samen \'t Loo (Terlostraat 7)',
 				},
 				{
 					date: this.newDate(18, 10, 2026),
-					img: require('~/assets/event-images/souls_logo.svg'),
-					name: 'Spirituele Beurs Souls',
-					text_1: '10.00 - 17.00 Nijnsel.',
+					featured: true,
+					img: require('~/assets/beurs.jpg'),
+					name: 'Souls Spirituele beurs',
+					text_1: '10:00 - 17:00 Nijnsel',
 					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
 					href: 'https://www.facebook.com/soulsspirituelebeurs',
 				},
 				{
+					date: this.newDate(14, 3, 2027),
+					name: 'Horus Paranormale Beurs',
+					text_1: '10:30 - 17:00 Someren-Eind',
+					text_2: 'M.F. Centrum De Einder (Einderplein 1)',
+				},
+				{
 					date: this.newDate(18, 4, 2027),
-					img: require('~/assets/event-images/souls_logo.svg'),
-					name: 'Spirituele Beurs Souls',
-					text_1: '10.00 - 17.00 Nijnsel.',
+					featured: true,
+					img: require('~/assets/beurs.jpg'),
+					name: 'Souls Spirituele beurs',
+					text_1: '10:00 - 17:00 Nijnsel',
 					text_2: 'De Beckart (Oude Lieshoutseweg 7, Sint-Oedenrode)',
 					href: 'https://www.facebook.com/soulsspirituelebeurs',
 				},
 			],
-			showAll: false,
-			now: 0
+			now: 0,
 		}
-	},
-	mounted() {
-		this.now = Date.now()
 	},
 	computed: {
 		sortedEvents() {
-			const events = this.events
-			const sorted = events.sort((a, b) => a.date - b.date)
-			return sorted
+			return [...this.events].sort((a, b) => a.date - b.date)
 		},
 		upcomingEvents() {
 			if (!this.now) {
 				return this.sortedEvents
 			}
-			const filteredEvents = this.sortedEvents.filter(
-				(event) => event.date > this.now
-			)
-
-			return filteredEvents
+			return this.sortedEvents.filter((event) => event.date > this.now)
 		},
+		// Links staat altijd de eerstvolgende Souls beurs; is er geen, dan de eerstvolgende beurs.
+		featuredEvent() {
+			return (
+				this.upcomingEvents.find((event) => event.featured) ||
+				this.upcomingEvents[0] ||
+				null
+			)
+		},
+		// Rechts de andere beurzen, maximaal drie.
+		otherEvents() {
+			return this.upcomingEvents
+				.filter((event) => event !== this.featuredEvent)
+				.slice(0, 3)
+		},
+	},
+	mounted() {
+		this.now = Date.now()
 	},
 	methods: {
 		newDate: (day, month, year) => {
 			return new Date(year, month - 1, day, 18)
-		},
-		requireImg: src => {
-			return require('~/assets/event-images/'+src+'.svg')
 		},
 	},
 }
