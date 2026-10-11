@@ -30,7 +30,7 @@ component.event-card.big-shadow.rounded-lg.d-flex.flex-column.white(:class="{ 'e
 	flex: 0 0 280px
 	height: 280px
 	background-size: cover
-	background-position: center
+	background-position: center 85%
 
 .event-card__date
 	min-width: 48px
