@@ -142,7 +142,7 @@ export default {
 					top: 'Belevenismiddag buiten',
 					title: 'Medicijnwiel',
 					img: require('~/assets/experience-images/medicijnwiel.jpg'),
-					text: 'In het medicijnwiel kan je een plaats zoeken die je aanspreekt. En als er ceremonies uitgevoerd worden op alle 4 windrichtingen, kunnen we verschuivingen creëren. Voor jezelf kan je een vraag stellen en dan gaan waarnemen en voelen, ook kan er n.a.v. een kaartje een plaats gezocht worden in de cirkel.',
+					text: 'In het medicijnwiel kan je een plaats zoeken die je aanspreekt. En als er ceremonies uitgevoerd worden op alle 4 windrichtingen, kunnen we verschuivingen creëren. Voor jezelf kan je een vraag stellen en dan gaan waarnemen en voelen.',
 				},
 				{
 					top: 'Belevenismiddag buiten',
@@ -166,7 +166,7 @@ export default {
 					top: 'Belevenismiddag binnen',
 					title: 'Infrarood massagetafel',
 					img: require('~/assets/experience-images/infrarood.jpg'),
-					text: 'De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.',
+					text: 'De warmte van de infrarood, zorgt voor een betere doorbloeding en afname van pijn. Dit kan als behandeling bijgeboekt worden.',
 				},
 			],
 		}
