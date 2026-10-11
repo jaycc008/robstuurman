@@ -261,7 +261,7 @@ export default {
 		display: none
 
 .podcast-row
-	margin-top: 88px !important
+	margin-top: 128px !important
 
 .podcast-text
 	display: flex
