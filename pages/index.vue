@@ -111,6 +111,21 @@ v-container(fluid)
 		v-col.offset-sm-1(cols="12" sm="10")
 			p Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
 
+	v-row.full-width.float-left.mb-md-16.mb-sm-8#reiki
+		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;")
+			.purple-background.purple-background--left
+			v-img(:src="require('~/assets/theme-2.jpg')")
+		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5")
+			.podcast-text
+				p.small.focus.mb-2 Reiki Master Lya
+				h2.mb-4 Reiki behandeling
+				p.treatment--text Energie is overal om ons heen en
+					span.treatment--text.focus  reiki
+					|  is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren. Het is een universele liefdesenergie die ik door mag geven.
+				v-btn.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded href="mailto:lyamoor@kpnmail.nl")
+					span Stuur een mail
+					img.ml-4(src="~/assets/arrow-right.svg")
+
 	v-row.full-width.float-left#themes.offset-anchor
 		v-col.offset-sm-1(cols="12" sm="10" md="8")
 			h1 Belevenisdag
