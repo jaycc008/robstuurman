@@ -117,10 +117,10 @@ v-container(fluid)
 			v-img(:src="require('~/assets/theme-2.jpg')")
 		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5")
 			.podcast-text
-				p.small.focus.mb-2 Reiki Master Lya
-				h2.mb-4 Reiki behandeling
-				p.treatment--text Energie is overal om ons heen en
-					span.treatment--text.focus  reiki
+				h1 Reiki behandeling
+				.title2.mb-8 Maak kennis met Reiki
+				p Je kunt (ook) een reiki behandeling boeken bij Lya. Energie is overal om ons heen en
+					span.focus  reiki
 					|  is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren. Het is een universele liefdesenergie die ik door mag geven.
 				v-btn.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded href="mailto:lyamoor@kpnmail.nl")
 					span Stuur een mail
