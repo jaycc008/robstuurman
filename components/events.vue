@@ -5,14 +5,19 @@
 			.h1 Beurzen kalender
 	client-only
 		v-row
-			v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="6" lg="5" v-if="featuredEvent")
+			v-col.offset-sm-1.offset-md-0.offset-lg-1.pb-0.pb-md-5(cols="12" sm="10" md="6" lg="5" v-if="featuredEvent")
 				event(:event="featuredEvent" featured)
-			v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="6" lg="5" v-if="otherEvents.length")
+			v-col.offset-sm-1.offset-md-0.pt-4.pt-md-5(cols="12" sm="10" md="6" lg="5" v-if="otherEvents.length")
 				event(v-for="(event, index) in otherEvents" :key="index" :event="event")
 
 </template>
 
-<style lang="sass"></style>
+<style lang="sass">
+.events-wrapper
+	clear: both
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		padding-top: 38px
+</style>
 
 <script>
 export default {
