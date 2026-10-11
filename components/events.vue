@@ -1,7 +1,7 @@
 <template lang="pug">
 .events-wrapper
 	v-row
-		v-col.offset-sm-1.offset-md-0.offset-lg-1
+		v-col.offset-sm-1.offset-md-0.offset-lg-1.pb-0
 			.h1 Beurzen kalender
 	client-only
 		v-row
