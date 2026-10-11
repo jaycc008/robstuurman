@@ -14,6 +14,19 @@ v-container(fluid)
 
 	events.pt-4.mt-16.mb-2
 
+	v-row.full-width.float-left.mt-16.mb-md-16.mb-sm-8#podcast
+		v-col.offset-sm-2.offset-md-1.d-flex.align-center(cols="12" sm="8" md="5" xl="4" style="position:relative;")
+			.purple-background.purple-background--left
+			yt-video.full-width
+		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5")
+			.podcast-text
+				h1 Podcast
+				.title2.mb-6 Interview bij Zelfwerkzaamheid
+				p.mb-8 &ldquo;Ik laat ze vanuit hun hoofd naar hun hart gaan om contact te maken met zichzelf, hun innerlijke ik.&rdquo;
+				v-btn.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ajr9DBjItEQ")
+					span Bekijk het interview
+					img.ml-4(src="~/assets/arrow-right.svg")
+
 	v-row.float-left.mb-5#about.offset-anchor
 		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")
 			.about-picture
@@ -30,16 +43,10 @@ v-container(fluid)
 					img.ml-3(src="~/assets/arrow-down.svg")
 
 
-	v-row.mt-16
-		v-col.offset-sm-1(cols="12" sm="10")
-			h1 Podcast
-			.title2.mb-6 Interview bij Zelfwerkzaamheid
-			yt-video
-
 	v-row.float-left#treatments.offset-anchor
 		v-col.offset-sm-1.mb-0.mb-sm-8.mb-md-16(md="8" sm="10")
 			h1 Energetische behandelingen
-			.title2.mb-8 Als energetisch genezer kan ik u helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
+			.title2.mb-8 Als energetisch genezer kan ik je helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
 			p Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
 				span.focus  zowel de aarde als de geestelijke wereld
 				| . Het kosmische symbool &lsquo;Argoem&rsquo;, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
@@ -210,6 +217,12 @@ v-container(fluid)
 		height: calc(100% - 40px)
 	@media #{map-get($display-breakpoints, 'xs-only')}
 		display: none
+
+.podcast-text
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	margin: auto 0
 
 .treatment--text
 	@media #{map-get($display-breakpoints, 'md-only')}
