@@ -27,8 +27,8 @@ component.event-card.big-shadow.rounded-lg.d-flex.flex-column.white(:class="{ 'e
 	margin-top: 16px
 
 .event-card__image
-	flex: 0 0 200px
-	height: 200px
+	flex: 0 0 280px
+	height: 280px
 	background-size: cover
 	background-position: center
 
