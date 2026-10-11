@@ -122,9 +122,9 @@ v-container(fluid)
 					v-card.rounded-lg.full-height.d-flex.flex-column(color="skin" flat)
 						v-img.flex-grow-0(:src="item.img" :aspect-ratio="1.6" eager)
 						.pa-8
-							p.small.focus {{ item.top }}
+							p.small.focus.mb-2 {{ item.top }}
 							h2.tertiary--text.mb-2 {{ item.title }}
-							p.small.tertiary--text {{ item.text }}
+							p.small.tertiary--text.mb-0 {{ item.text }}
 </template>
 
 <script>
