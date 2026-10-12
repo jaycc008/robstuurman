@@ -1,5 +1,5 @@
 <template lang="pug">
-.events-wrapper
+.events-wrapper(v-if="upcomingEvents.length")
 	v-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1.pb-0
 			.h1 Beurzen kalender
@@ -14,9 +14,9 @@
 
 <style lang="sass">
 .events-wrapper
-	clear: both
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
-		padding-top: 38px
+		// Dezelfde 20px rand als een v-col, zodat de blokafstand van de homepage klopt.
+		padding: 20px 0
 </style>
 
 <script>

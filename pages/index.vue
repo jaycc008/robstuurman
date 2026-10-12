@@ -1,5 +1,5 @@
 <template lang="pug">
-v-container(fluid)
+v-container.home(fluid)
 	v-row.float-left#home.offset-anchor
 		v-col.offset-lg-1.offset-sm-1(cols="12" sm="10" md="6")
 			h1 Energetisch genezen
@@ -11,7 +11,7 @@ v-container(fluid)
 		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5(cols="12" md="4" sm="10")
 			img.hero-image(src="~/assets/zen.png")
 
-	events.mb-2
+	events.float-left.full-width.mt-md-5.mb-2
 
 	v-row.full-width.float-left.podcast-row#podcast
 		v-col.offset-sm-1.offset-md-1.d-flex.my-auto(cols="12" sm="10" md="5")
@@ -31,20 +31,20 @@ v-container(fluid)
 			.about-me
 				h1 Over Rob Stuurman
 				.title2.mb-6 Ik stel me graag even voor
-				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
+				p.mb-0.mb-md-4 Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
 
 
 	v-row.float-left#treatments.offset-anchor
-		v-col.offset-sm-1.treatments-intro.mb-0.mb-md-16(md="8" sm="10")
+		v-col.offset-sm-1.mb-0.mb-md-16(md="8" sm="10")
 			h1 Energetische behandelingen
 			.title2.mb-8 Als energetisch genezer kan ik je helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
-			p Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
+			p.mb-0.mb-md-4 Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
 				span.focus  zowel de aarde als de geestelijke wereld
 				| . Het kosmische symbool &lsquo;Argoem&rsquo;, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
 
-	v-row.float-left.treatment-row.mb-md-16
+	v-row.float-left.mb-md-16
 		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="1")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-1.png')")
@@ -53,7 +53,7 @@ v-container(fluid)
 				span.treatment--text.focus  Christusbewustzijn
 				| . Persoonlijk put ik dan ook mijn kracht uit de verbinding met God de Vader, Christus, Moeder Maria en de Engelen. Ik voel deze universele energie door mij heen stromen en gebruik deze via mijn handen om te genezen. 
 
-	v-row.float-left.treatment-row.mb-md-16
+	v-row.float-left.mb-md-16
 		v-col.offset-sm-1.offset-md-1.d-flex.my-auto(cols="12" sm="10" md="5" order="1" order-md="1")
 			p.treatment--text Onderdeel van de behandeling is het in balans brengen van de
 				span.treatment--text.focus  chakra's
@@ -62,7 +62,7 @@ v-container(fluid)
 			.purple-background.purple-background--right
 			v-img(:src="require('~/assets/treatment-2.png')")
 
-	v-row.float-left.treatment-row.mb-md-16
+	v-row.float-left.mb-md-16
 		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="1")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-3.png')")
@@ -110,11 +110,11 @@ v-container(fluid)
 		v-col.offset-sm-1(cols="12" sm="10")
 			p.mb-0.mb-md-4 Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
 
-	v-row.float-left.reiki-row.mb-md-16#reiki
+	v-row.float-left.mb-md-16#reiki
 		v-col.offset-sm-1.offset-md-1(cols="12" sm="10" md="3" order="2" order-md="1")
 			.about-picture.reiki-picture
 				v-img.image-shadow(:src="require('~/assets/theme-2.jpg')" width="100%" :aspect-ratio="1")
-		v-col.offset-sm-1.d-flex.pt-2.pt-md-5(cols="12" sm="10" md="7" lg="6" order="1" order-md="2")
+		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="7" lg="6" order="1" order-md="2")
 			.about-me
 				h1 Reiki behandeling
 				.title2.mb-8 Maak kennis met Reiki
@@ -124,9 +124,8 @@ v-container(fluid)
 
 	v-row.full-width.float-left#themes.offset-anchor
 		v-col.offset-sm-1(cols="12" sm="10" md="8")
-			h1 Belevenisdag
+			h1 Belevenismiddag
 			.title2 Kom een middag ervaren. Mediteer in een merkaba, maak gebruik van het medicijnwiel, kom tot rust in de lemniscaat, of geniet van een behandeling binnen in de boerderij.
-	v-row.float-left.belevenisdag-row
 		v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="12" lg="10")
 			v-row
 				v-col(v-for="(item, index) in experiences" :key="index" cols="12" sm="6" md="4")
@@ -190,20 +189,29 @@ export default {
 	max-width: 80%
 	height: auto
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		display: block
+		margin: 0 auto
 		max-width: 60%
 
+// Mobiel: elk blok op de homepage staat 48px onder het vorige. Een v-col heeft
+// 20px padding boven en onder en een v-row -20px marge, dus 20 + 28 - 20 + 20 = 48.
+@media #{map-get($display-breakpoints, 'sm-and-down')}
+	.home.container > *
+		margin-top: -20px !important
+		margin-bottom: 28px !important
+
+// Menu-ankers: de vaste navigatie staat boven de pagina, dus scroll een stuk onder de bovenrand.
 .offset-anchor
-	padding-top: 180px
-	margin-top: -180px !important
-	&#about, &#treatments
-		margin-top: -120px !important
+	scroll-margin-top: 180px
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
-		padding-top: 150px
-		margin-top: -150px
-		&#about
-			margin-top: -146px !important
-		&#treatments
-			margin-top: -162px !important
+		scroll-margin-top: 150px
+	// Desktop: extra lucht boven Over Rob en Behandelingen, en onder de belevenismiddag-kaarten.
+	@media #{map-get($display-breakpoints, 'md-and-up')}
+		margin-top: 0 !important
+		&#about, &#treatments
+			margin-top: 60px !important
+		&#themes
+			margin-bottom: 44px !important
 
 .v-responsive__content
 	display: none
@@ -261,26 +269,13 @@ export default {
 		display: none
 
 .podcast-row
-	margin-top: 92px !important
-	margin-bottom: 4px !important
-	@media #{map-get($display-breakpoints, 'sm-and-down')}
-		margin-top: 20px !important
+	@media #{map-get($display-breakpoints, 'md-and-up')}
+		margin-top: 92px !important
+		margin-bottom: 4px !important
 
-// Mobiel: 48px tussen de blokken
-@media #{map-get($display-breakpoints, 'sm-and-down')}
-	.treatments-intro
-		padding-bottom: 12px !important
-	.treatment-row
-		margin-bottom: -12px !important
-	.reiki-row
-		margin-bottom: 38px !important
-	.reiki-picture
+.reiki-picture
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
 		margin-top: 32px
-
-.belevenisdag-row
-	margin-bottom: 44px !important
-	@media #{map-get($display-breakpoints, 'sm-and-down')}
-		margin-bottom: 28px !important
 
 .podcast-text
 	display: flex
