@@ -14,6 +14,7 @@ export default {
 			{ hid: 'description', name: 'description', content: '' },
 			{ name: 'msapplication-TileColor', content: '#00aba9' },
 			{ name: 'theme-color', content: '#ffffff' },
+			{ cache: false },
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -58,7 +59,7 @@ export default {
 	],
 
 	// Modules (https://go.nuxtjs.dev/config-modules)
-	modules: [],
+	modules: ['portal-vue/nuxt'],
 
 	// Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
 	vuetify: {
@@ -72,6 +73,9 @@ export default {
 					accent: '#F07C6D', // orange
 					secondary: '#7784C8', // purple
 					tertiary: '#47537F', // blue
+					skin: '#FFECE5', // zalmroze
+					lightpurple: '#F1EBF5',
+					lightpurple2: '#F8F9FA',
 					info: colors.teal.lighten1,
 					warning: colors.amber.base,
 					error: colors.deepOrange.accent4,

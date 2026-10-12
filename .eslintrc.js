@@ -2,7 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es6: true,
-		node: true
+		node: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -15,17 +15,17 @@ module.exports = {
 	plugins: ['prettier', 'vue'],
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2018,
+		ecmaVersion: 2020,
 		allowImportExportEverywhere: true,
 		parser: 'babel-eslint',
 		ecmaFeatures: {
-			spread: true
-		}
+			spread: true,
+		},
 	},
 	rules: {
 		'linebreak-style': ['error', 'unix'],
 		'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'object-shorthand': ['warn'],
-		'vue/component-tags-order': ['off']
-	}
-};
+		'vue/component-tags-order': ['off'],
+	},
+}
