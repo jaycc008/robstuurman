@@ -1,5 +1,5 @@
 <template lang="pug">
-v-container(fluid)
+v-container.home(fluid)
 	v-row.float-left#home.offset-anchor
 		v-col.offset-lg-1.offset-sm-1(cols="12" sm="10" md="6")
 			h1 Energetisch genezen
@@ -8,70 +8,70 @@ v-container(fluid)
 				span.focus  Argoem
 				|  en kosmische naam 
 				span.focus  Loor
-		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5.pb-md-15(cols="12" md="4" sm="10")
-			img.d-none.d-md-block(src="~/assets/zen.png")
-			v-img.d-md-none.d-block(:src="require('~/assets/rob_landscape.png')" :aspect-ratio="1.5" max-width="746")
+		v-col.offset-sm-1.offset-md-0.offset-lg-1.text-lg-left.text-center.pb-5(cols="12" md="4" sm="10")
+			img.hero-image(src="~/assets/zen.png")
 
-	events.pt-4.mt-16.mb-2
+	events.float-left.full-width.mt-md-5.mb-2
+
+	v-row.full-width.float-left.podcast-row#podcast
+		v-col.offset-sm-1.offset-md-1.d-flex.my-auto(cols="12" sm="10" md="5")
+			.podcast-text
+				h1 Podcast
+				.title2.mb-6 Interview bij Zelfwerkzaamheid
+				p &ldquo;Ik laat ze vanuit hun hoofd naar hun hart gaan om contact te maken met zichzelf, hun innerlijke ik.&rdquo;
+		v-col.offset-sm-2.offset-md-0.offset-xl-1.d-flex.align-center(cols="12" sm="8" md="5" xl="4" style="position:relative;")
+			.purple-background.purple-background--right
+			yt-video.full-width
 
 	v-row.float-left.mb-5#about.offset-anchor
-		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="4")
+		v-col.d-none.d-md-block.offset-1.offset-md-1(cols="3")
 			.about-picture
 				v-img.image-shadow(:src="require('~/assets/rob_portrait.jpeg')" width="100%")
-		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="6" lg="5")
+		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="7" lg="6")
 			.about-me
 				h1 Over Rob Stuurman
 				.title2.mb-6 Ik stel me graag even voor
-				p Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
+				p.mb-0.mb-md-4 Ik ben geboren op 19 september 1957 te Hollandia, Nieuw Guinea. In de winter van '60-'61 zijn we met onze ouders verhuisd naar Nederland. Mijn praktijk voor Energetisch genezen voer ik in Sint-Oedenrode. Om dit uit te mogen voeren heb ik in 2001 tot 2003 bij het
 					span.focus  Instituut voor energiewerk Mirre
 					|  de opleiding tot regressietherapeut gevolgd en vervolgens de genezersopleiding afgerond.
-				v-btn.mt-2.pl-6.pr-4.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="#contact")
-					span Neem contact op
-					img.ml-3(src="~/assets/arrow-down.svg")
 
-
-	v-row.mt-16
-		v-col.offset-sm-1(cols="12" sm="10")
-			h1 Podcast
-			.title2.mb-6 Interview bij Zelfwerkzaamheid
-			yt-video
 
 	v-row.float-left#treatments.offset-anchor
-		v-col.offset-sm-1.mb-0.mb-sm-8.mb-md-16(md="8" sm="10")
+		v-col.offset-sm-1.mb-0.mb-md-16(md="8" sm="10")
 			h1 Energetische behandelingen
-			.title2.mb-8 Als energetisch genezer kan ik u helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
-			p Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
+			.title2.mb-8 Als energetisch genezer kan ik je helpen bij psychische, emotionele en lichamelijke klachten, daar waar de reguliere medische zorg geen hulp meer kan bieden
+			p.mb-0.mb-md-4 Voor het energetisch behandelen stel ik mij in verbinding met de krachten van
 				span.focus  zowel de aarde als de geestelijke wereld
 				| . Het kosmische symbool &lsquo;Argoem&rsquo;, dat afgebeeld is op de vloer, versterkt hierbij mijn verbinding en de kracht tot genezing.
 
-	v-row.float-left.mb-md-16.mb-sm-8
-		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;")
+	v-row.float-left.mb-md-16
+		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="1")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-1.png')")
-		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5")
+		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5" order="1" order-md="2")
 			p.treatment--text In de loop van de jaren heb ik een ontwikkeling in innerlijke groei doorgemaakt en heb ik mij daarbij opengesteld voor het
 				span.treatment--text.focus  Christusbewustzijn
 				| . Persoonlijk put ik dan ook mijn kracht uit de verbinding met God de Vader, Christus, Moeder Maria en de Engelen. Ik voel deze universele energie door mij heen stromen en gebruik deze via mijn handen om te genezen. 
 
-	v-row.float-left.mb-md-16.mb-sm-8
-		v-col.offset-sm-1.offset-md-1.d-flex.my-auto(cols="12" sm="10" md="5" order="2" order-md="1")
+	v-row.float-left.mb-md-16
+		v-col.offset-sm-1.offset-md-1.d-flex.my-auto(cols="12" sm="10" md="5" order="1" order-md="1")
 			p.treatment--text Onderdeel van de behandeling is het in balans brengen van de
 				span.treatment--text.focus  chakra's
 				| . Daarna laat ik mij intuïtief leiden door de gegeven energie. Op deze manier bereik ik goede resultaten bij geestelijke, psychische en traumatische klachten maar ook ter bestrijding van lichamelijke pijn in het algemeen zoals migraine en hoofdpijn.
-		v-col.offset-sm-2.offset-md-0.offset-xl-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="1" order-md="2")
+		v-col.offset-sm-2.offset-md-0.offset-xl-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="2")
 			.purple-background.purple-background--right
 			v-img(:src="require('~/assets/treatment-2.png')")
 
 	v-row.float-left.mb-md-16
-		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;")
+		v-col.offset-sm-2.offset-md-1(cols="12" sm="8" md="5" xl="4" style="position:relative;" order="2" order-md="1")
 			.purple-background.purple-background--left
 			v-img(:src="require('~/assets/treatment-3.png')")
-		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5")
+		v-col.offset-sm-1.offset-md-0.d-flex.my-auto.offset-xl-1(cols="12" sm="10" md="6" lg="5" order="1" order-md="2")
 			p.treatment--text.small-md-and-down Ook maak ik gebruik van de technieken van
 				span.treatment--text.small.small-md-and-down.focus  Quantum Touch
 				| . Hiermee kunnen er snelle en opzienbare resultaten worden bereikt bij lichamelijke klachten en pijnen. Dit in het bijzonder bij disbalans van het beenderstelsel en bijbehorende spieren, zoals scheefstand van heupen, de wervels van de rug, nek of schedel. Lichamelijke aandoeningen hebben echter vaak een geestelijke oorzaak. Dit komt uiteraard ook aan de orde tijdens de behandeling.
 
-	v-row.mb-8.mb-lg-16.float-left
+	v-row.mb-0.mb-md-8.mb-lg-16.float-left
 		v-col.offset-sm-1(cols="12")
 			h1 Werkwijze
 			.title2 Leer meer over hoe ik te werk ga
@@ -108,53 +108,110 @@ v-container(fluid)
 								span.focus  behandeling
 								|  kan variëren van 1-2 uur
 		v-col.offset-sm-1(cols="12" sm="10")
-			p Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
+			p.mb-0.mb-md-4 Alternatieve genezing wil niet de plaats innemen van de reguliere medische zorg. Het is van belang om daarvan, waar mogelijk gebruik te blijven maken.
+
+	v-row.float-left.mb-md-16#reiki
+		v-col.offset-sm-1.offset-md-1(cols="12" sm="10" md="3" order="2" order-md="1")
+			.about-picture.reiki-picture
+				v-img.image-shadow(:src="require('~/assets/theme-2.jpg')" width="100%" :aspect-ratio="1")
+		v-col.offset-sm-1.d-flex(cols="12" sm="10" md="7" lg="6" order="1" order-md="2")
+			.about-me
+				h1 Reiki behandeling
+				.title2.mb-8 Maak kennis met Reiki
+				p Je kunt (ook) een reiki behandeling boeken bij Lya. Energie is overal om ons heen en
+					span.focus  reiki
+					|  is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren. Het is een universele liefdesenergie die ik door mag geven.
 
 	v-row.full-width.float-left#themes.offset-anchor
 		v-col.offset-sm-1(cols="12" sm="10" md="8")
-			h1 Thema avonden
-			.title2 Naast energetisch genezen bieden we ook verschillende thema avonden met andere behandelaars aan.
-	v-row.float-left.mb-11
-		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/infraroodtafel.jpg')" eager)
-				p.mx-8.mt-8.small.focus Energetisch Genezer Rob
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Infrarood behandeling
-				p.mx-8.small.tertiary--text De warmte die van de infrarood afkomt, zorgt voor een betere doorbloeding en afname van pijn. In combinatie met een behandeling zorgt dit voor een betere psychische, emotionele en lichamelijke gesteldheid.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt rel="nofollow" href="mailto:rob.stuurman@hotmail.com")
-					span.small Stuur een mail
-					img.ml-4(src="~/assets/arrow-right.svg")
-		v-col.offset-sm-1.offset-md-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/theme-2.jpg')" eager)
-				p.mx-8.mt-8.small.focus Reiki Master Lya
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Reiki Behandeling
-				p.mx-8.small.tertiary--text Energie is overal om ons heen en reiki is in iedereen aanwezig. Als ik een reiki behandeling geef, wordt dat als ontspannend ervaren; Het is een universele liefdes energie die ik door mag geven.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" outlined rounded nuxt href="mailto:lyamoor@kpnmail.nl")
-					span.small Stuur een mail
-					img.ml-4(src="~/assets/arrow-right.svg")
-		v-col.offset-sm-1.offset-lg-0(cols="12" sm="10" md="5" lg="4")
-			v-card.rounded-lg.full-height.d-inline-flex.flex-column(color="skin" flat)
-				v-img.flex-md-grow-0(:src="require('~/assets/beurs.jpg')" eager)
-				p.mx-8.mt-8.small.focus De Beckart in Nijnsel
-				h2.mx-8.tertiary--text.mb-2.flex-grow-1 Spirituele Beurs Souls
-				p.mx-8.small.tertiary--text De Spirituele Beurs Souls in de Beckart in Nijnsel is op zondag 18 oktober 2026 vanaf 10.00, entree kost slechts €3,-. Check voor het laatste nieuws onze Facebook pagina.
-				v-btn.mx-8.mb-8.gradient.text-none.align-self-start.hover--white(color="tertiary" height="48" target="_blank" outlined rounded nuxt href="https://www.facebook.com/soulsspirituelebeurs")
-					span.small Facebook Pagina
-					img.ml-4(src="~/assets/arrow-right.svg")
+			h1 Belevenismiddag
+			.title2 Kom een middag ervaren. Mediteer in een merkaba, maak gebruik van het medicijnwiel, kom tot rust in de lemniscaat, of geniet van een behandeling binnen in de boerderij.
+		v-col.offset-sm-1.offset-md-0.offset-lg-1(cols="12" sm="10" md="12" lg="10")
+			v-row
+				v-col(v-for="(item, index) in experiences" :key="index" cols="12" sm="6" md="4")
+					v-card.rounded-lg.full-height.d-flex.flex-column(color="skin" flat)
+						v-img.flex-grow-0(:src="item.img" :aspect-ratio="1.6" eager)
+						.pa-8
+							p.small.focus.mb-2 {{ item.top }}
+							h2.tertiary--text.mb-2 {{ item.title }}
+							p.small.tertiary--text.mb-0 {{ item.text }}
 </template>
 
+<script>
+export default {
+	data() {
+		return {
+			experiences: [
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Merkaba',
+					img: require('~/assets/experience-images/merkaba.jpg'),
+					text: 'Zitten in de Merkaba om te mediteren, de energie door je heen te laten stromen en je uit te lijnen. Het geeft energetische bescherming en helpt spiritueel te groeien. De geometrie heeft een rechtstreekse verbinding met onze schepping en de bron van liefde.',
+				},
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Medicijnwiel',
+					img: require('~/assets/experience-images/medicijnwiel.jpg'),
+					text: 'In het medicijnwiel kan je een plaats zoeken die je aanspreekt. En als er ceremonies uitgevoerd worden op alle 4 windrichtingen, kunnen we verschuivingen creëren. Voor jezelf kan je een vraag stellen en dan gaan waarnemen en voelen.',
+				},
+				{
+					top: 'Belevenismiddag buiten',
+					title: 'Lemniscaat',
+					img: require('~/assets/experience-images/lemniscaat.jpg'),
+					text: 'Stel jezelf de vraag waar je duidelijkheid in wil en ga lopen. Je kan ook een kaart trekken uit het lemniscaat loopspel en daar al lopend over denken en voelen. Het lopen van de lemniscaat haalt je uit je denken en laat je gaan naar waarnemen en voelen.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Piramide, Genesa en pentasfeer',
+					img: require('~/assets/experience-images/genesa.jpg'),
+					text: 'Ervaar de energie van de piramide, of ga onder de genesa en pentasfeer bollen liggen. De bollen zitten op de hoogte van de chakra\'s.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Urim stoel of Bron-code stoel',
+					img: require('~/assets/experience-images/urim.jpg'),
+					text: 'Maak vrij gebruik van de Urim stoel voor ontspanning. De Bron-code stoel is onder begeleiding bij te boeken.',
+				},
+				{
+					top: 'Belevenismiddag binnen',
+					title: 'Infrarood massagetafel',
+					img: require('~/assets/experience-images/infrarood.jpg'),
+					text: 'De warmte van de infrarood, zorgt voor een betere doorbloeding en afname van pijn. Dit kan als behandeling bijgeboekt worden.',
+				},
+			],
+		}
+	},
+}
+</script>
+
 <style lang="sass">
-.offset-anchor
-	padding-top: 180px
-	margin-top: -180px !important
-	&#about, &#treatments
-		margin-top: -120px !important
+.hero-image
+	max-width: 80%
+	height: auto
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
-		padding-top: 150px
-		margin-top: -150px
+		display: block
+		margin: 0 auto
+		max-width: 60%
+
+// Mobiel: elk blok op de homepage staat 48px onder het vorige. Een v-col heeft
+// 20px padding boven en onder en een v-row -20px marge, dus 20 + 28 - 20 + 20 = 48.
+@media #{map-get($display-breakpoints, 'sm-and-down')}
+	.home.container > *
+		margin-top: -20px !important
+		margin-bottom: 28px !important
+
+// Menu-ankers: de vaste navigatie staat boven de pagina, dus scroll een stuk onder de bovenrand.
+.offset-anchor
+	scroll-margin-top: 180px
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		scroll-margin-top: 150px
+	// Desktop: extra lucht boven Over Rob en Behandelingen, en onder de belevenismiddag-kaarten.
+	@media #{map-get($display-breakpoints, 'md-and-up')}
+		margin-top: 0 !important
 		&#about, &#treatments
-			margin-top: -90px
+			margin-top: 60px !important
+		&#themes
+			margin-bottom: 44px !important
 
 .v-responsive__content
 	display: none
@@ -210,6 +267,21 @@ v-container(fluid)
 		height: calc(100% - 40px)
 	@media #{map-get($display-breakpoints, 'xs-only')}
 		display: none
+
+.podcast-row
+	@media #{map-get($display-breakpoints, 'md-and-up')}
+		margin-top: 92px !important
+		margin-bottom: 4px !important
+
+.reiki-picture
+	@media #{map-get($display-breakpoints, 'sm-and-down')}
+		margin-top: 32px
+
+.podcast-text
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	margin: auto 0
 
 .treatment--text
 	@media #{map-get($display-breakpoints, 'md-only')}

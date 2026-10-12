@@ -5,11 +5,10 @@ v-app(light)
 		main-nav
 		nuxt.content
 		v-footer.float-left.full-width#contact(padless)
-			v-card.lightpurple(flat tile width="100%")
+			.footer-block
 				v-container(fluid)
 					v-row.my-5
-						v-col(cols="12" md="3" order='1' order-mdAndUp='2')
-						v-col(cols="11" md="4" order='2' order-mdAndUp='1')
+						v-col.offset-sm-1(cols="12" sm="10" md="5" lg="4")
 							.full-height.d-flex.flex-column.justify-center
 								.title2.mb-10 Zorg goed voor je zelf, neem gerust contact met me op
 								ul
@@ -25,10 +24,10 @@ v-app(light)
 									li.d-inline-flex.address-list-item
 										v-img.mr-4.flex-grow-0(:src="require('~/assets/event-images/souls_logo.svg')" height="40" width="40")
 										a.address-line(href="https://www.facebook.com/soulsspirituelebeurs" rel="nofollow" target="_blank") Souls Spirituele Beurs
-						v-col.my-n5.offset-md-1(cols="4" v-if="$vuetify.breakpoint.mdAndUp" order='3')
-							.full-height.d-flex.justify-center
-								v-img(:src="require('~/assets/argoem.png')" contain eager)
-			.full-width.d-flex.justify-end.py-3.white
+						v-col.my-n5.offset-md-1.offset-lg-2(cols="4" v-if="$vuetify.breakpoint.mdAndUp")
+							.full-height.d-flex.justify-end
+								v-img(:src="require('~/assets/argoem.png')" contain position="center right" width="100%" eager)
+			.footer-bottom.full-width.d-flex.justify-end.py-3.white
 				v-menu(offset-y top)
 					template(v-slot:activator="{ on, attrs }")
 						a.small.mr-6.secondary--text.text-decoration-underline(v-bind="attrs" v-on="on") Credits
@@ -37,7 +36,7 @@ v-app(light)
 							v-list-item-title.small
 								| {{credit.text}}
 								a.secondary--text.text-decoration-underline(:href="credit.href" target="_blank")  {{credit.linktext}}
-				.mr-6.small 2024 © Rob Stuurman
+				.small 2026 © Rob Stuurman
 </template>
 
 <script>
@@ -80,6 +79,31 @@ export default {
 	@media #{map-get($display-breakpoints, 'sm-and-down')}
 		.content
 			margin-top: 128px
+
+// Footer: het lila vlak loopt links tot de rand en stopt rechts 30px voorbij de contentkolom,
+// net als de paarse vlakken achter de foto's hoger op de pagina.
+.footer-block
+	position: relative
+	width: 100%
+	&::before
+		content: ""
+		position: absolute
+		z-index: 0
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: var(--v-lightpurple-base)
+		@media #{map-get($display-breakpoints, 'md-and-up')}
+			right: calc(8.3333% - 30px)
+	> *
+		position: relative
+		z-index: 1
+
+.footer-bottom
+	padding-right: 20px
+	@media #{map-get($display-breakpoints, 'md-and-up')}
+		padding-right: calc(8.3333% - 30px)
 
 .full-height
 	height: 100%
